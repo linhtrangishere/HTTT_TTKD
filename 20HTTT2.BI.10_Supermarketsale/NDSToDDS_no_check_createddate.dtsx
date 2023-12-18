@@ -5,106 +5,106 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="LANTRINH_ASUS"
   DTS:CreatorName="lantrinh_asus\lantr"
-  DTS:DTSID="{D4EACB0E-6653-4C20-ADAC-79E29ED3CF26}"
+  DTS:DTSID="{EB9DAE2E-1563-4C07-9CC2-58FD8599A7A2}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.5314.0"
   DTS:LocaleID="1033"
-  DTS:ObjectName="NDSToDDS"
+  DTS:ObjectName="NDSToDDS_no_check_createddate"
   DTS:PackageType="5"
-  DTS:VersionBuild="127"
-  DTS:VersionGUID="{6DE34E1C-0B0B-4A08-9B2F-B4F4601D4D94}">
+  DTS:VersionBuild="130"
+  DTS:VersionGUID="{E769758E-9E01-40D6-AB28-03BA339AE1AE}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[LANTRINH_ASUS.metadata]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{22C800BD-68A2-4936-A655-B27CEC998F83}"
+      DTS:DTSID="{6A8DC078-25D5-4185-B8A1-ECBD7E8FC1A7}"
       DTS:ObjectName="LANTRINH_ASUS.metadata">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=metadata;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-NDSToDDS-{22C800BD-68A2-4936-A655-B27CEC998F83}LANTRINH_ASUS.metadata;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=metadata;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-NDSToDDS-{6A8DC078-25D5-4185-B8A1-ECBD7E8FC1A7}LANTRINH_ASUS.metadata;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[LANTRINH_ASUS.supermarketsale_dds]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{7AF72C51-BF2F-4C80-82A5-D24299C8A106}"
+      DTS:DTSID="{08D7455E-CA3F-4B7C-9B22-D6457B1E4859}"
       DTS:ObjectName="LANTRINH_ASUS.supermarketsale_dds">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=supermarketsale_dds;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-NDSToDDS-{7AF72C51-BF2F-4C80-82A5-D24299C8A106}LANTRINH_ASUS.supermarketsale_dds;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=supermarketsale_dds;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-NDSToDDS-{08D7455E-CA3F-4B7C-9B22-D6457B1E4859}LANTRINH_ASUS.supermarketsale_dds;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[LANTRINH_ASUS.supermarketsale_nds]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{26CC5F88-1664-4D5E-8829-1C440F0983C1}"
+      DTS:DTSID="{2933FF53-7C73-4D30-93AD-B30580AF0A7A}"
       DTS:ObjectName="LANTRINH_ASUS.supermarketsale_nds">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=supermarketsale_nds;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-NDSToDDS-{26CC5F88-1664-4D5E-8829-1C440F0983C1}LANTRINH_ASUS.supermarketsale_nds;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=supermarketsale_nds;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-NDSToDDS-{2933FF53-7C73-4D30-93AD-B30580AF0A7A}LANTRINH_ASUS.supermarketsale_nds;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[LANTRINH_ASUS.supermarketsale_nds 1]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{A7E74958-035D-4543-828F-EF46AA056B75}"
+      DTS:DTSID="{081D5E7B-6B0D-4ECB-9F01-B4DC46A9F909}"
       DTS:ObjectName="LANTRINH_ASUS.supermarketsale_nds 1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=supermarketsale_nds;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package1-{A7E74958-035D-4543-828F-EF46AA056B75}LANTRINH_ASUS.supermarketsale_nds;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=supermarketsale_nds;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package1-{081D5E7B-6B0D-4ECB-9F01-B4DC46A9F909}LANTRINH_ASUS.supermarketsale_nds;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[LANTRINH_ASUS.supermarketsale_stage]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{B2723C86-D70D-40DE-8CAB-E61C0100CF96}"
+      DTS:DTSID="{1097AA6A-8A90-4D44-B878-2E77593A2F20}"
       DTS:ObjectName="LANTRINH_ASUS.supermarketsale_stage">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=supermarketsale_stage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package1-{B2723C86-D70D-40DE-8CAB-E61C0100CF96}LANTRINH_ASUS.supermarketsale_stage;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=supermarketsale_stage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package1-{1097AA6A-8A90-4D44-B878-2E77593A2F20}LANTRINH_ASUS.supermarketsale_stage;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[localhost.metadata]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{204546FA-465B-47EB-BD8B-E63B68FC4BE5}"
+      DTS:DTSID="{75C81D26-FD97-47E6-9386-E5EEA5D5617D}"
       DTS:ObjectName="localhost.metadata">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=metadata;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-NDSToDDS-{204546FA-465B-47EB-BD8B-E63B68FC4BE5}localhost.metadata;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=metadata;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-NDSToDDS-{75C81D26-FD97-47E6-9386-E5EEA5D5617D}localhost.metadata;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[localhost.supermarketsale_nds]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{AF0ADAC1-DF2D-4D03-BBA6-311B44ED08D1}"
+      DTS:DTSID="{4CBB0661-1B65-4238-9543-0B4E97385466}"
       DTS:ObjectName="localhost.supermarketsale_nds">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=supermarketsale_nds;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-NDSToDDS-{AF0ADAC1-DF2D-4D03-BBA6-311B44ED08D1}localhost.supermarketsale_nds;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=supermarketsale_nds;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-NDSToDDS-{4CBB0661-1B65-4238-9543-0B4E97385466}localhost.supermarketsale_nds;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{7E51F715-62C4-428B-BA01-1370A74ECC84}"
+      DTS:DTSID="{E5B761EE-6020-434D-8A0D-9BC6AD3E9A7F}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="CET_dimcity">
@@ -113,7 +113,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{F9B95983-EC91-49DF-BA0F-1BC84BA9AAA5}"
+      DTS:DTSID="{57E161A3-27D1-4390-95BC-07CE915376C4}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="CET_dimcustomer">
@@ -122,7 +122,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{0BB75A80-0A4A-433F-80EE-5A6CF400FBCC}"
+      DTS:DTSID="{2D4B506A-24B4-4AF8-8BBC-C546973FDA2C}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="CET_dimdate">
@@ -131,7 +131,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{BF7936E0-2F79-45D9-9C71-2E98B220760F}"
+      DTS:DTSID="{CA2EDC0E-5E54-45FB-B96F-FBB217651846}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="CET_dimgender">
@@ -140,7 +140,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{BC37EA4D-893C-4ABC-9CE5-2E049A04A0BD}"
+      DTS:DTSID="{4C6EC27E-F273-4FAB-8A48-797EB0226F79}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="CET_dimpayment">
@@ -149,7 +149,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{AB39EF7F-CA2B-488B-AE98-E574F6644014}"
+      DTS:DTSID="{C98FF1CD-FDBB-4310-B11A-8A7A7AB344C7}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="CET_dimproduct">
@@ -158,7 +158,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{050A8160-F3D0-4D34-9190-929095AAFA4D}"
+      DTS:DTSID="{1EE8EC70-30FC-4785-8675-FFE8EE1A040E}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="CET_dimproductline">
@@ -167,7 +167,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{63C652C7-5BCF-4F1F-A876-C962BFF4D6B5}"
+      DTS:DTSID="{F98F0557-B866-45E9-952A-F3EA1D3F30C8}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="CET_factsales">
@@ -176,7 +176,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{23E02787-58A8-4862-B6B5-E266F30C0BBE}"
+      DTS:DTSID="{C95F8C13-1219-4A9C-AEAB-22FA3640AC81}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="dim_customer">
@@ -185,7 +185,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{54F2B82C-CE00-4D24-B9AC-A689323A4B4A}"
+      DTS:DTSID="{2B80B7AE-2F32-4107-845C-AEEF12B2A538}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="dim_productline">
@@ -194,7 +194,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{D72D96F4-59F2-42EB-A641-D9618356DD27}"
+      DTS:DTSID="{2AF1C7AB-6701-4556-AA8D-37FBA5E08806}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="LSET_dimcity">
@@ -203,7 +203,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{E9BF8EF1-360B-4706-8BBD-D480CD2FDAA8}"
+      DTS:DTSID="{3C0A828F-6F4F-49FD-999E-2A2AB1514530}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="LSET_dimcustomer">
@@ -212,7 +212,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{06D40D98-E9EC-434E-A314-A1B13C4D2F0B}"
+      DTS:DTSID="{9B10AF55-419D-475C-8F07-DEFB7517B9FF}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="LSET_dimdate">
@@ -221,7 +221,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{1836C5BD-EAA8-483F-8CEC-08C84DD42D87}"
+      DTS:DTSID="{7EAD4CD6-6350-4E8C-9F1B-D3278BA0E1EF}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="LSET_dimgendẻ">
@@ -230,7 +230,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{17923E51-5336-48A3-8E6E-4ADF81FB2321}"
+      DTS:DTSID="{236BC0AF-F885-4A59-853A-7828556CE11A}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="LSET_dimpayment">
@@ -239,7 +239,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{EAC1F9D6-6A14-44DF-818F-71943D97D898}"
+      DTS:DTSID="{B98FF83B-E3C1-4D47-A757-35095144433F}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="LSET_dimproduct">
@@ -248,7 +248,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{2514135B-07A1-4DCA-8508-2D603DE00795}"
+      DTS:DTSID="{F3C9CB2F-C171-4739-8B7D-14FB1162EC91}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="LSET_dimproductline">
@@ -257,7 +257,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{F9623B6D-0EF1-4070-BFBD-18E19696DE83}"
+      DTS:DTSID="{F35CFDC9-3C3B-4F8F-862B-B466BF8756ED}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="LSET_factsales">
@@ -266,7 +266,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{A6D11C3D-3C09-4850-808C-788D06060DAF}"
+      DTS:DTSID="{609769BD-684E-4892-96E7-4ECD006D1303}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="Variable">
@@ -279,7 +279,7 @@
       DTS:refId="Package\Sequence Container"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:DTSID="{DDFE0711-A225-4939-A3FB-562B0686DC1F}"
+      DTS:DTSID="{12D000E4-373D-4FAD-8590-874682A4AD47}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Sequence Container">
@@ -289,16 +289,16 @@
           DTS:refId="Package\Sequence Container\Get LSET dds_city"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{5283a68f-7ee4-443f-9b65-1e0a780d7aab}"
+          DTS:DTSID="{3AE74D0F-D3C4-45A1-8D14-F18BB0608A80}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET dds_city"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{22C800BD-68A2-4936-A655-B27CEC998F83}"
+              SQLTask:Connection="{6A8DC078-25D5-4185-B8A1-ECBD7E8FC1A7}"
               SQLTask:SqlStatementSource="select LSET from data_flow&#xA;where tenbang = 'dds_city';"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -311,16 +311,16 @@
           DTS:refId="Package\Sequence Container\Get LSET dds_customer_type"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{61e03c2c-07b3-47d1-9f0c-013d093ec999}"
+          DTS:DTSID="{4B8F29D0-77FC-4431-85BB-842B416B41CF}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET dds_customer_type"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="5">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{22C800BD-68A2-4936-A655-B27CEC998F83}"
+              SQLTask:Connection="{6A8DC078-25D5-4185-B8A1-ECBD7E8FC1A7}"
               SQLTask:SqlStatementSource="select LSET from data_flow&#xA;where tenbang = 'dds_customer';"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -333,16 +333,16 @@
           DTS:refId="Package\Sequence Container\Get LSET dds_date"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{a9318049-c3e5-42e0-8b37-0fc9a628bd32}"
+          DTS:DTSID="{10E43A60-6B95-4F2B-9B00-794A008A7559}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET dds_date"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{22C800BD-68A2-4936-A655-B27CEC998F83}"
+              SQLTask:Connection="{6A8DC078-25D5-4185-B8A1-ECBD7E8FC1A7}"
               SQLTask:SqlStatementSource="select LSET from data_flow&#xA;where tenbang = 'dds_date'"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -355,16 +355,16 @@
           DTS:refId="Package\Sequence Container\Get LSET dds_gender"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{2e3ded1c-1f86-4ca8-97af-4b6f4429621c}"
+          DTS:DTSID="{4F78C2F0-7451-448B-AE8D-799F9B7CAA7C}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET dds_gender"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{22C800BD-68A2-4936-A655-B27CEC998F83}"
+              SQLTask:Connection="{6A8DC078-25D5-4185-B8A1-ECBD7E8FC1A7}"
               SQLTask:SqlStatementSource="select LSET from data_flow&#xA;where tenbang = 'dds_gender'"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -377,16 +377,16 @@
           DTS:refId="Package\Sequence Container\Get LSET dds_payment_type"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{92d662bd-0c55-4c9c-8fe5-2fc163b80cc5}"
+          DTS:DTSID="{D68C9819-4E97-473A-816A-90A9C4CF431C}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET dds_payment_type"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="5">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{22C800BD-68A2-4936-A655-B27CEC998F83}"
+              SQLTask:Connection="{6A8DC078-25D5-4185-B8A1-ECBD7E8FC1A7}"
               SQLTask:SqlStatementSource="select LSET from data_flow&#xA;where tenbang = 'dds_payment'"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -399,7 +399,7 @@
           DTS:refId="Package\Sequence Container\Get LSET dds_product"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{13d0f0dd-8fc9-4935-ab82-e283e5ee302c}"
+          DTS:DTSID="{2D2DBB34-1574-4809-AA4B-4B073CEC51A7}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET dds_product"
@@ -408,7 +408,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{22C800BD-68A2-4936-A655-B27CEC998F83}"
+              SQLTask:Connection="{6A8DC078-25D5-4185-B8A1-ECBD7E8FC1A7}"
               SQLTask:SqlStatementSource="select LSET from data_flow&#xA;where tenbang = 'dds_productline';"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -421,7 +421,7 @@
           DTS:refId="Package\Sequence Container\Get LSET dds_productline"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{13b9c331-9d45-46bb-a872-c27d947fdf5b}"
+          DTS:DTSID="{9BE0F25A-76D5-458C-A371-866B3B05767C}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET dds_productline"
@@ -430,7 +430,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{22C800BD-68A2-4936-A655-B27CEC998F83}"
+              SQLTask:Connection="{6A8DC078-25D5-4185-B8A1-ECBD7E8FC1A7}"
               SQLTask:SqlStatementSource="select LSET from data_flow&#xA;where tenbang = 'dds_productline';"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -443,16 +443,16 @@
           DTS:refId="Package\Sequence Container\Get, set CET dds_city"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{3f157fb6-459e-4d7c-a0a6-aeb7efdb5388}"
+          DTS:DTSID="{82BB0D28-D277-4D5B-9651-4E4563C0DB6D}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Get, set CET dds_city"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{204546FA-465B-47EB-BD8B-E63B68FC4BE5}"
+              SQLTask:Connection="{75C81D26-FD97-47E6-9386-E5EEA5D5617D}"
               SQLTask:SqlStatementSource="update data_flow set cet = getdate() where tenbang = 'dds_city';&#xA;select cet from data_flow where tenbang = 'dds_city'"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -465,16 +465,16 @@
           DTS:refId="Package\Sequence Container\Get, set CET dds_customer_type"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{c029671b-2e38-4501-9f18-a098c6290814}"
+          DTS:DTSID="{46F8FAD4-6F4F-4CA5-B095-ACDEC5B8BF59}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Get, set CET dds_customer_type"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="5">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{22C800BD-68A2-4936-A655-B27CEC998F83}"
+              SQLTask:Connection="{6A8DC078-25D5-4185-B8A1-ECBD7E8FC1A7}"
               SQLTask:SqlStatementSource="update data_flow set cet = getdate() where tenbang = 'dds_customer';&#xA;select cet from data_flow where tenbang = 'dds_customer'"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -487,16 +487,16 @@
           DTS:refId="Package\Sequence Container\Get, set CET dds_date"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{8c2c6ef6-445a-4bd3-b71e-629f86451119}"
+          DTS:DTSID="{A14BF5E5-AA21-48FF-A926-8053AE06B762}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Get, set CET dds_date"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{22C800BD-68A2-4936-A655-B27CEC998F83}"
+              SQLTask:Connection="{6A8DC078-25D5-4185-B8A1-ECBD7E8FC1A7}"
               SQLTask:SqlStatementSource="update data_flow set cet = getdate() where tenbang = 'dds_date'&#xA;select cet from data_flow where tenbang = 'dds_date'"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -509,16 +509,16 @@
           DTS:refId="Package\Sequence Container\Get, set CET dds_gender"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{299cc83f-972f-433c-b01b-a13c81b825d9}"
+          DTS:DTSID="{E9772AEE-22AE-4FBC-8C84-B76DB02B4934}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Get, set CET dds_gender"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{22C800BD-68A2-4936-A655-B27CEC998F83}"
+              SQLTask:Connection="{6A8DC078-25D5-4185-B8A1-ECBD7E8FC1A7}"
               SQLTask:SqlStatementSource="update data_flow set cet = getdate() where tenbang = 'dds_gender'&#xA;select cet from data_flow where tenbang = 'dds_gender'"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -531,16 +531,16 @@
           DTS:refId="Package\Sequence Container\Get, set CET dds_payment_type"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{23d110e0-7e52-45ca-b4fd-5c02ce1d5210}"
+          DTS:DTSID="{9D778809-AA57-4406-9344-CA39608CFF2F}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Get, set CET dds_payment_type"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="5">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{22C800BD-68A2-4936-A655-B27CEC998F83}"
+              SQLTask:Connection="{6A8DC078-25D5-4185-B8A1-ECBD7E8FC1A7}"
               SQLTask:SqlStatementSource="update data_flow set cet = getdate() where tenbang = 'dds_payment'&#xA;select cet from data_flow where tenbang = 'dds_payment'"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -553,7 +553,7 @@
           DTS:refId="Package\Sequence Container\Get, set CET dds_product"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{e8f874d2-0b0a-4a65-9b4d-f72e969c601f}"
+          DTS:DTSID="{0D87F380-4A03-421A-9BF3-1FC7E846B226}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Get, set CET dds_product"
@@ -562,7 +562,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{22C800BD-68A2-4936-A655-B27CEC998F83}"
+              SQLTask:Connection="{6A8DC078-25D5-4185-B8A1-ECBD7E8FC1A7}"
               SQLTask:SqlStatementSource="update data_flow set cet = getdate() where tenbang = 'dds_product';&#xA;select cet from data_flow where tenbang = 'dds_product';"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -575,7 +575,7 @@
           DTS:refId="Package\Sequence Container\Get, set CET dds_productline"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{0e5f3548-a65e-4dde-85a3-ec31a9de12ff}"
+          DTS:DTSID="{15493EFB-0BBD-460D-A1FF-644468064F88}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Get, set CET dds_productline"
@@ -584,7 +584,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{22C800BD-68A2-4936-A655-B27CEC998F83}"
+              SQLTask:Connection="{6A8DC078-25D5-4185-B8A1-ECBD7E8FC1A7}"
               SQLTask:SqlStatementSource="update data_flow set cet = getdate() where tenbang = 'dds_productline';&#xA;select cet from data_flow where tenbang = 'dds_productline';"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -597,7 +597,7 @@
           DTS:refId="Package\Sequence Container\Populate dds_city"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{134EF257-1B9E-46E7-B82B-561B865F1767}"
+          DTS:DTSID="{C4E4699E-77B5-493D-8CD1-86757F5262D0}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Populate dds_city"
@@ -632,7 +632,7 @@
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from city_nds where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;= ? and updateddate &gt; ?)</property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from city_nds</property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -653,7 +653,7 @@
                     <property
                       dataType="System.String"
                       description="The mappings between the parameters in the SQL command and variables."
-                      name="ParameterMapping">"Parameter0:Input",{7E51F715-62C4-428B-BA01-1370A74ECC84};"Parameter1:Input",{D72D96F4-59F2-42EB-A641-D9618356DD27};"Parameter2:Input",{7E51F715-62C4-428B-BA01-1370A74ECC84};"Parameter3:Input",{7E51F715-62C4-428B-BA01-1370A74ECC84};</property>
+                      name="ParameterMapping">"Parameter0:Input",{E5B761EE-6020-434D-8A0D-9BC6AD3E9A7F};"Parameter1:Input",{2AF1C7AB-6701-4556-AA8D-37FBA5E08806};"Parameter2:Input",{E5B761EE-6020-434D-8A0D-9BC6AD3E9A7F};"Parameter3:Input",{E5B761EE-6020-434D-8A0D-9BC6AD3E9A7F};</property>
                   </properties>
                   <connections>
                     <connection
@@ -1788,7 +1788,7 @@
           DTS:refId="Package\Sequence Container\Populate dds_customer_type"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{73672667-ca63-4a23-97b0-6c0eeda8b98b}"
+          DTS:DTSID="{2BD06DE2-2F1C-45C5-B569-A25CC089E5E5}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Populate dds_customer_type"
@@ -1823,7 +1823,7 @@
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from customer_type_nds where (createddate &lt;= ? and createddate &gt; ?)  or (updateddate &lt;= ? and updateddate &gt; ?)</property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from customer_type_nds</property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -1844,7 +1844,7 @@
                     <property
                       dataType="System.String"
                       description="The mappings between the parameters in the SQL command and variables."
-                      name="ParameterMapping">"Parameter0:Input",{F9B95983-EC91-49DF-BA0F-1BC84BA9AAA5};"Parameter1:Input",{E9BF8EF1-360B-4706-8BBD-D480CD2FDAA8};"Parameter2:Input",{F9B95983-EC91-49DF-BA0F-1BC84BA9AAA5};"Parameter3:Input",{E9BF8EF1-360B-4706-8BBD-D480CD2FDAA8};</property>
+                      name="ParameterMapping">"Parameter0:Input",{57E161A3-27D1-4390-95BC-07CE915376C4};"Parameter1:Input",{3C0A828F-6F4F-49FD-999E-2A2AB1514530};"Parameter2:Input",{57E161A3-27D1-4390-95BC-07CE915376C4};"Parameter3:Input",{3C0A828F-6F4F-49FD-999E-2A2AB1514530};</property>
                   </properties>
                   <connections>
                     <connection
@@ -2739,7 +2739,7 @@ set active = ? where customertype_sk = ?</property>
           DTS:refId="Package\Sequence Container\Populate dds_date"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{58b18228-1d17-42bf-b263-0d652ac54658}"
+          DTS:DTSID="{79A973B6-359F-4EB5-BB32-C99616E6075A}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Populate dds_date"
@@ -3472,7 +3472,7 @@ where [refTable].[sqldate] = ?</property>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select Date, Time from sales_nds where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;= ? and updateddate &gt; ?)</property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select Date, Time from sales_nds</property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -3493,7 +3493,7 @@ where [refTable].[sqldate] = ?</property>
                     <property
                       dataType="System.String"
                       description="The mappings between the parameters in the SQL command and variables."
-                      name="ParameterMapping">"Parameter0:Input",{0BB75A80-0A4A-433F-80EE-5A6CF400FBCC};"Parameter1:Input",{06D40D98-E9EC-434E-A314-A1B13C4D2F0B};"Parameter2:Input",{0BB75A80-0A4A-433F-80EE-5A6CF400FBCC};"Parameter3:Input",{06D40D98-E9EC-434E-A314-A1B13C4D2F0B};</property>
+                      name="ParameterMapping">"Parameter0:Input",{2D4B506A-24B4-4AF8-8BBC-C546973FDA2C};"Parameter1:Input",{9B10AF55-419D-475C-8F07-DEFB7517B9FF};"Parameter2:Input",{2D4B506A-24B4-4AF8-8BBC-C546973FDA2C};"Parameter3:Input",{9B10AF55-419D-475C-8F07-DEFB7517B9FF};</property>
                   </properties>
                   <connections>
                     <connection
@@ -3604,7 +3604,7 @@ where [refTable].[sqldate] = ?</property>
           DTS:refId="Package\Sequence Container\Populate dds_gender"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{350236a6-966d-40a3-b773-1b5213f3c4f0}"
+          DTS:DTSID="{E81D481F-5069-4044-A5E1-4CFA4885A95D}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Populate dds_gender"
@@ -3639,7 +3639,7 @@ where [refTable].[sqldate] = ?</property>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from gender_nds where  (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;= ? and updateddate &gt; ?)</property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from gender_nds</property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -3660,7 +3660,7 @@ where [refTable].[sqldate] = ?</property>
                     <property
                       dataType="System.String"
                       description="The mappings between the parameters in the SQL command and variables."
-                      name="ParameterMapping">"Parameter0:Input",{BF7936E0-2F79-45D9-9C71-2E98B220760F};"Parameter1:Input",{1836C5BD-EAA8-483F-8CEC-08C84DD42D87};"Parameter2:Input",{BF7936E0-2F79-45D9-9C71-2E98B220760F};"Parameter3:Input",{1836C5BD-EAA8-483F-8CEC-08C84DD42D87};</property>
+                      name="ParameterMapping">"Parameter0:Input",{CA2EDC0E-5E54-45FB-B96F-FBB217651846};"Parameter1:Input",{7EAD4CD6-6350-4E8C-9F1B-D3278BA0E1EF};"Parameter2:Input",{CA2EDC0E-5E54-45FB-B96F-FBB217651846};"Parameter3:Input",{7EAD4CD6-6350-4E8C-9F1B-D3278BA0E1EF};</property>
                   </properties>
                   <connections>
                     <connection
@@ -4555,7 +4555,7 @@ set active = ? where gender_sk= ?</property>
           DTS:refId="Package\Sequence Container\Populate dds_payment_type"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{87d7008d-6d6d-4677-b214-7994e5e89a02}"
+          DTS:DTSID="{FB80DFC0-E682-4491-8947-70C9A66BA1BA}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Populate dds_payment_type"
@@ -4870,7 +4870,7 @@ where [refTable].[paymenttype] = ?</property>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from payment_type_nds where  (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;= ? and updateddate &gt; ?)</property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from payment_type_nds</property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -4891,7 +4891,7 @@ where [refTable].[paymenttype] = ?</property>
                     <property
                       dataType="System.String"
                       description="The mappings between the parameters in the SQL command and variables."
-                      name="ParameterMapping">"Parameter0:Input",{BC37EA4D-893C-4ABC-9CE5-2E049A04A0BD};"Parameter1:Input",{17923E51-5336-48A3-8E6E-4ADF81FB2321};"Parameter2:Input",{BC37EA4D-893C-4ABC-9CE5-2E049A04A0BD};"Parameter3:Input",{17923E51-5336-48A3-8E6E-4ADF81FB2321};</property>
+                      name="ParameterMapping">"Parameter0:Input",{4C6EC27E-F273-4FAB-8A48-797EB0226F79};"Parameter1:Input",{236BC0AF-F885-4A59-853A-7828556CE11A};"Parameter2:Input",{4C6EC27E-F273-4FAB-8A48-797EB0226F79};"Parameter3:Input",{236BC0AF-F885-4A59-853A-7828556CE11A};</property>
                   </properties>
                   <connections>
                     <connection
@@ -5506,7 +5506,7 @@ set active = ? where paymenttype_sk= ?</property>
           DTS:refId="Package\Sequence Container\Populate dds_product"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{F07EC968-BA85-4B81-A382-431F0D2BB67D}"
+          DTS:DTSID="{6ADF1A90-E285-484C-A7F9-A1290608AEA7}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Populate dds_product"
@@ -5614,6 +5614,12 @@ set active = ? where paymenttype_sk= ?</property>
                           cachedName="Active"
                           externalMetadataColumnId="Package\Sequence Container\Populate dds_product\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[Active]"
                           lineageId="Package\Sequence Container\Populate dds_product\Union All.Outputs[Union All Output 1].Columns[Active]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Populate dds_product\Insert Destination.Inputs[OLE DB Destination Input].Columns[ProductID_SK]"
+                          cachedDataType="i4"
+                          cachedName="ProductID_SK"
+                          externalMetadataColumnId="Package\Sequence Container\Populate dds_product\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProductID_SK]"
+                          lineageId="Package\Sequence Container\Populate dds_product\Union All.Outputs[Union All Output 1].Columns[ProductID_SK]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -5834,7 +5840,7 @@ where [refTable].[productlineid_sk] = ?</property>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from product_nds where  (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;= ? and updateddate &gt; ?)</property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from product_nds</property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -5855,7 +5861,7 @@ where [refTable].[productlineid_sk] = ?</property>
                     <property
                       dataType="System.String"
                       description="The mappings between the parameters in the SQL command and variables."
-                      name="ParameterMapping">"Parameter0:Input",{AB39EF7F-CA2B-488B-AE98-E574F6644014};"Parameter1:Input",{EAC1F9D6-6A14-44DF-818F-71943D97D898};"Parameter2:Input",{AB39EF7F-CA2B-488B-AE98-E574F6644014};"Parameter3:Input",{EAC1F9D6-6A14-44DF-818F-71943D97D898};</property>
+                      name="ParameterMapping">"Parameter0:Input",{C98FF1CD-FDBB-4310-B11A-8A7A7AB344C7};"Parameter1:Input",{B98FF83B-E3C1-4D47-A757-35095144433F};"Parameter2:Input",{C98FF1CD-FDBB-4310-B11A-8A7A7AB344C7};"Parameter3:Input",{B98FF83B-E3C1-4D47-A757-35095144433F};</property>
                   </properties>
                   <connections>
                     <connection
@@ -6921,7 +6927,7 @@ where [refTable].[productlineid_sk] = ?</property>
           DTS:refId="Package\Sequence Container\Populate dds_productline"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{7d34fbd0-6e41-48dd-9148-30dbfc2aab1a}"
+          DTS:DTSID="{2CA53559-E47C-4467-AFB9-CBB5EFBBD199}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Populate dds_productline"
@@ -7107,7 +7113,7 @@ where [refTable].[productlineid_sk] = ?</property>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from productline_nds where  (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;= ? and updateddate &gt; ?)</property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from productline_nds</property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -7128,7 +7134,7 @@ where [refTable].[productlineid_sk] = ?</property>
                     <property
                       dataType="System.String"
                       description="The mappings between the parameters in the SQL command and variables."
-                      name="ParameterMapping">"Parameter0:Input",{050A8160-F3D0-4D34-9190-929095AAFA4D};"Parameter1:Input",{2514135B-07A1-4DCA-8508-2D603DE00795};"Parameter2:Input",{050A8160-F3D0-4D34-9190-929095AAFA4D};"Parameter3:Input",{2514135B-07A1-4DCA-8508-2D603DE00795};</property>
+                      name="ParameterMapping">"Parameter0:Input",{1EE8EC70-30FC-4785-8675-FFE8EE1A040E};"Parameter1:Input",{F3C9CB2F-C171-4739-8B7D-14FB1162EC91};"Parameter2:Input",{1EE8EC70-30FC-4785-8675-FFE8EE1A040E};"Parameter3:Input",{F3C9CB2F-C171-4739-8B7D-14FB1162EC91};</property>
                   </properties>
                   <connections>
                     <connection
@@ -8113,7 +8119,7 @@ where [refTable].[productlineid_sk] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{76B79848-9047-447F-95FE-1450DA745D52}"
+          DTS:DTSID="{C07FE5BB-0334-4611-BD21-2FE64D3D19B1}"
           DTS:From="Package\Sequence Container\Get LSET dds_city"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -8121,7 +8127,7 @@ where [refTable].[productlineid_sk] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 1]"
           DTS:CreationName=""
-          DTS:DTSID="{5b950e94-d6cc-4c0c-9e76-ff76cc4cddff}"
+          DTS:DTSID="{7FB11920-D3D1-4A35-85ED-9CAB78EEC0DE}"
           DTS:From="Package\Sequence Container\Get LSET dds_customer_type"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1"
@@ -8129,7 +8135,7 @@ where [refTable].[productlineid_sk] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 1 1]"
           DTS:CreationName=""
-          DTS:DTSID="{f94f20d9-f6dc-494a-8e21-91aa4120db87}"
+          DTS:DTSID="{C7181819-66E2-4EC4-A4D3-AADF9D4ABFBD}"
           DTS:From="Package\Sequence Container\Get LSET dds_payment_type"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1 1"
@@ -8137,7 +8143,7 @@ where [refTable].[productlineid_sk] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 1 1 1]"
           DTS:CreationName=""
-          DTS:DTSID="{df85c7b4-acb2-497f-b5e4-5bb59c1c64bf}"
+          DTS:DTSID="{8928F45C-54EB-4DEF-894D-5E522A1F2950}"
           DTS:From="Package\Sequence Container\Get LSET dds_gender"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1 1 1"
@@ -8145,7 +8151,7 @@ where [refTable].[productlineid_sk] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 1 1 2]"
           DTS:CreationName=""
-          DTS:DTSID="{b2b06b05-f956-407e-8ba6-0889815b5318}"
+          DTS:DTSID="{4C68378D-D6AE-4671-B181-2DBA0081CD7D}"
           DTS:From="Package\Sequence Container\Get LSET dds_date"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1 1 2"
@@ -8153,7 +8159,7 @@ where [refTable].[productlineid_sk] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 2]"
           DTS:CreationName=""
-          DTS:DTSID="{de5568b0-bafd-4a19-99da-8176e5dd1994}"
+          DTS:DTSID="{1AC7CA0B-2AD3-4DA8-9C07-18E8A25F4136}"
           DTS:From="Package\Sequence Container\Get LSET dds_productline"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 2"
@@ -8161,7 +8167,7 @@ where [refTable].[productlineid_sk] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 3]"
           DTS:CreationName=""
-          DTS:DTSID="{e9e412e2-c4d0-43dd-90fe-919a273c83e2}"
+          DTS:DTSID="{E67A30D8-FA20-4DB3-97F8-53953D94B7D0}"
           DTS:From="Package\Sequence Container\Get, set CET dds_city"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 3"
@@ -8169,7 +8175,7 @@ where [refTable].[productlineid_sk] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 3 1]"
           DTS:CreationName=""
-          DTS:DTSID="{f72f8912-6e16-4ae6-8ea3-5865e6312482}"
+          DTS:DTSID="{D857062C-8057-446D-8054-75BCF598500F}"
           DTS:From="Package\Sequence Container\Get, set CET dds_customer_type"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 3 1"
@@ -8177,7 +8183,7 @@ where [refTable].[productlineid_sk] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 3 1 1]"
           DTS:CreationName=""
-          DTS:DTSID="{32cb7b65-ce40-4ce1-84b9-83777081a311}"
+          DTS:DTSID="{8C01318B-E1B8-4E12-9E63-A1DFC329CB22}"
           DTS:From="Package\Sequence Container\Get, set CET dds_payment_type"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 3 1 1"
@@ -8185,7 +8191,7 @@ where [refTable].[productlineid_sk] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 3 1 1 1]"
           DTS:CreationName=""
-          DTS:DTSID="{ca83f488-79ce-4d3a-9ed2-956a1c2d3515}"
+          DTS:DTSID="{9BC8E994-D94E-4C1A-B474-63E3D9BF6376}"
           DTS:From="Package\Sequence Container\Get, set CET dds_gender"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 3 1 1 1"
@@ -8193,7 +8199,7 @@ where [refTable].[productlineid_sk] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 3 1 1 2]"
           DTS:CreationName=""
-          DTS:DTSID="{0077a7b2-6b9f-431e-ae2a-75dd649fe3fc}"
+          DTS:DTSID="{1FEB0F6B-E02D-4C93-AB2E-DE5B80B00CF5}"
           DTS:From="Package\Sequence Container\Get, set CET dds_date"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 3 1 1 2"
@@ -8201,7 +8207,7 @@ where [refTable].[productlineid_sk] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 3 2]"
           DTS:CreationName=""
-          DTS:DTSID="{fcbb2a02-7edc-4a1a-a774-e419eb513e09}"
+          DTS:DTSID="{DFC3B7ED-B092-40C1-B973-3E1FE358B5F7}"
           DTS:From="Package\Sequence Container\Get, set CET dds_productline"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 3 2"
@@ -8209,7 +8215,7 @@ where [refTable].[productlineid_sk] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 4]"
           DTS:CreationName=""
-          DTS:DTSID="{CF5F29C7-FE17-4216-9F12-CC64B7E0C116}"
+          DTS:DTSID="{9132D460-43F0-451C-AB39-665C31DFE41D}"
           DTS:From="Package\Sequence Container\Populate dds_productline"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 4"
@@ -8217,7 +8223,7 @@ where [refTable].[productlineid_sk] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 5]"
           DTS:CreationName=""
-          DTS:DTSID="{3EB1B7C0-04FC-48E9-8E44-38C6632A8EC7}"
+          DTS:DTSID="{47B1FE4E-F380-43F8-A487-8B80A72A1067}"
           DTS:From="Package\Sequence Container\Get, set CET dds_product"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 5"
@@ -8225,7 +8231,7 @@ where [refTable].[productlineid_sk] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 6]"
           DTS:CreationName=""
-          DTS:DTSID="{E8CAD174-8982-47C4-996E-FB62A4AA94FF}"
+          DTS:DTSID="{215012DE-012C-4E77-BD3B-6227128580A2}"
           DTS:From="Package\Sequence Container\Get LSET dds_product"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 6"
@@ -8236,7 +8242,7 @@ where [refTable].[productlineid_sk] = ?</property>
       DTS:refId="Package\Sequence Container 1"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:DTSID="{F607769C-C416-4A09-830D-057B79A10351}"
+      DTS:DTSID="{C3B7636D-87C1-4257-9AE7-BC729E8277A4}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Sequence Container 1">
@@ -8246,7 +8252,7 @@ where [refTable].[productlineid_sk] = ?</property>
           DTS:refId="Package\Sequence Container 1\Get LSET fact_sales"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{9bf580da-bffd-4ca0-8854-594bf32f64c7}"
+          DTS:DTSID="{0326F66D-C9DA-423B-9ACE-494432EB9DE3}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET fact_sales"
@@ -8255,7 +8261,7 @@ where [refTable].[productlineid_sk] = ?</property>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{22C800BD-68A2-4936-A655-B27CEC998F83}"
+              SQLTask:Connection="{6A8DC078-25D5-4185-B8A1-ECBD7E8FC1A7}"
               SQLTask:SqlStatementSource="select LSET from data_flow&#xA;where tenbang = 'fact_sales';"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -8268,7 +8274,7 @@ where [refTable].[productlineid_sk] = ?</property>
           DTS:refId="Package\Sequence Container 1\Get, set CET fact_sales"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{d1bdbce1-13f5-46c4-98de-254f790d83e8}"
+          DTS:DTSID="{E1000487-5A8C-4AED-A723-1088358711BC}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Get, set CET fact_sales"
@@ -8277,7 +8283,7 @@ where [refTable].[productlineid_sk] = ?</property>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{22C800BD-68A2-4936-A655-B27CEC998F83}"
+              SQLTask:Connection="{6A8DC078-25D5-4185-B8A1-ECBD7E8FC1A7}"
               SQLTask:SqlStatementSource="update data_flow set cet = getdate() where tenbang = 'fact_sales';&#xA;select cet from data_flow where tenbang = 'fact_sales';"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -8290,7 +8296,7 @@ where [refTable].[productlineid_sk] = ?</property>
           DTS:refId="Package\Sequence Container 1\Populate fact_sales"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{7e81b5c8-395e-45b2-94cf-3c87c376c5a4}"
+          DTS:DTSID="{0C01AA70-DCAC-47CF-AE13-280A78E3877A}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Populate fact_sales"
@@ -9640,7 +9646,7 @@ where [refTable].[productid_sk] = ?</property>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from sales_nds where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;= ? and updateddate &gt; ?)</property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from sales_nds</property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -9661,7 +9667,7 @@ where [refTable].[productid_sk] = ?</property>
                     <property
                       dataType="System.String"
                       description="The mappings between the parameters in the SQL command and variables."
-                      name="ParameterMapping">"Parameter0:Input",{63C652C7-5BCF-4F1F-A876-C962BFF4D6B5};"Parameter1:Input",{F9623B6D-0EF1-4070-BFBD-18E19696DE83};"Parameter2:Input",{63C652C7-5BCF-4F1F-A876-C962BFF4D6B5};"Parameter3:Input",{F9623B6D-0EF1-4070-BFBD-18E19696DE83};</property>
+                      name="ParameterMapping">"Parameter0:Input",{F98F0557-B866-45E9-952A-F3EA1D3F30C8};"Parameter1:Input",{F35CFDC9-3C3B-4F8F-862B-B466BF8756ED};"Parameter2:Input",{F98F0557-B866-45E9-952A-F3EA1D3F30C8};"Parameter3:Input",{F35CFDC9-3C3B-4F8F-862B-B466BF8756ED};</property>
                   </properties>
                   <connections>
                     <connection
@@ -11029,7 +11035,7 @@ where [refTable].[productid_sk] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container 1.PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{55311386-8438-467f-a1e5-b0215ead5ca3}"
+          DTS:DTSID="{4985C053-B738-4EC5-A768-5BBCD1D4F12B}"
           DTS:From="Package\Sequence Container 1\Get LSET fact_sales"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -11037,7 +11043,7 @@ where [refTable].[productid_sk] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container 1.PrecedenceConstraints[Constraint 3]"
           DTS:CreationName=""
-          DTS:DTSID="{077cdcee-108c-4199-8455-fcb5de23e8d6}"
+          DTS:DTSID="{88EAAF13-631C-4439-AF7E-9476E5D5A31B}"
           DTS:From="Package\Sequence Container 1\Get, set CET fact_sales"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 3"
@@ -11049,7 +11055,7 @@ where [refTable].[productid_sk] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{88A277CF-526F-4FA8-8DF1-B6DA0A267DAE}"
+      DTS:DTSID="{A6168BE2-DF36-4960-B863-955710B1DB9D}"
       DTS:From="Package\Sequence Container"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -11697,9 +11703,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11721,9 +11725,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11745,9 +11747,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11769,9 +11769,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11805,9 +11803,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11917,7 +11913,7 @@ where [refTable].[productid_sk] = ?</property>
         <Value
           type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
-  &lt;ConnectionID&gt;{7AF72C51-BF2F-4C80-82A5-D24299C8A106}&lt;/ConnectionID&gt;
+  &lt;ConnectionID&gt;{08D7455E-CA3F-4B7C-9B22-D6457B1E4859}&lt;/ConnectionID&gt;
   &lt;TableName&gt;[dbo].[dim_city]&lt;/TableName&gt;
   &lt;InputToColumnsCollection&gt;
     &lt;InputColumnToDBColumn&gt;
@@ -12040,9 +12036,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12064,9 +12058,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12100,9 +12092,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12196,9 +12186,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12220,9 +12208,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -12468,9 +12454,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12492,9 +12476,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12528,9 +12510,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12612,9 +12592,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12636,9 +12614,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -12740,9 +12716,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12764,9 +12738,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12800,9 +12772,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12825,7 +12795,7 @@ where [refTable].[productid_sk] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-55.80638671875,125.611979166667,111.6127734375,11.609375"
+              BoundingBox="-55.80638671875,125.611979166666,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -12884,9 +12854,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12908,9 +12876,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -13020,9 +12986,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13044,9 +13008,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13080,9 +13042,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13236,9 +13196,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13260,9 +13218,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -13299,7 +13255,7 @@ where [refTable].[productid_sk] = ?</property>
         <Value
           type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
-  &lt;ConnectionID&gt;{7AF72C51-BF2F-4C80-82A5-D24299C8A106}&lt;/ConnectionID&gt;
+  &lt;ConnectionID&gt;{08D7455E-CA3F-4B7C-9B22-D6457B1E4859}&lt;/ConnectionID&gt;
   &lt;TableName&gt;[dbo].[dim_product]&lt;/TableName&gt;
   &lt;InputToColumnsCollection&gt;
     &lt;InputColumnToDBColumn&gt;
@@ -13427,9 +13383,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13451,9 +13405,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13475,9 +13427,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13499,9 +13449,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13535,9 +13483,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13659,7 +13605,7 @@ where [refTable].[productid_sk] = ?</property>
         <Value
           type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
-  &lt;ConnectionID&gt;{7AF72C51-BF2F-4C80-82A5-D24299C8A106}&lt;/ConnectionID&gt;
+  &lt;ConnectionID&gt;{08D7455E-CA3F-4B7C-9B22-D6457B1E4859}&lt;/ConnectionID&gt;
   &lt;TableName&gt;[dbo].[dim_productline]&lt;/TableName&gt;
   &lt;InputToColumnsCollection&gt;
     &lt;InputColumnToDBColumn&gt;
@@ -13801,9 +13747,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13825,9 +13769,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13861,9 +13803,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14101,9 +14041,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14125,9 +14063,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

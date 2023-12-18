@@ -62,7 +62,7 @@ GO
 
 CREATE TABLE dim_date
 (
-	DateID_SK int primary key,
+	DateID_SK int identity (1,1) primary key,
 	Date date null, -- Full date in mm/dd/yyyy format
 	AnsiDate char(10) null, --Full date in yyyy-mm-dd format
 	SqlDate datetime, --Full date in SQL Server datetime data type.
@@ -102,3 +102,12 @@ GO
 --go
 --update data_flow 
 --set lset = null, cet = null
+DECLARE @i int = 0
+DECLARE @baseDate datetime ='1-1-2019'
+WHILE @i < 366*1440
+BEGIN
+ 
+    INSERT INTO [dbo].[dim_date](Date,AnsiDate,SqlDate,[Day],[Month],[Quarter],[Year],Time,Active) Values (CAST(@baseDate as date),CAST(CAST(@baseDate as date)as char(10)),@baseDate,DAY(@baseDate),MONTH(@baseDate),CONCAT('Q',CEILING(CAST(MONTH(@baseDate) AS FLOAT)/3)),YEAR(@baseDate),CAST(@baseDate as Time),1)
+    SET @baseDate=DATEADD(minute,1,@baseDate)
+    SET @i = @i + 1
+END

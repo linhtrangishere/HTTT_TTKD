@@ -7,12 +7,12 @@
   DTS:CreatorName="lantrinh_asus\lantr"
   DTS:DTSID="{17F4A951-1D75-42D3-AC30-792FE2F947DA}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5397.1"
+  DTS:LastModifiedProductVersion="16.0.5314.0"
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="111"
-  DTS:VersionGUID="{5A0B5224-0C16-4AF2-9C0A-B8527BC6000C}">
+  DTS:VersionBuild="112"
+  DTS:VersionGUID="{80264C5E-E70C-4A8A-9589-FAD6690AE41B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -37,7 +37,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=LANTRINH_ASUS;Initial Catalog=supermarketsale_nds;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package1-{A7E74958-035D-4543-828F-EF46AA056B75}LANTRINH_ASUS.supermarketsale_nds;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=supermarketsale_nds;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package1-{A7E74958-035D-4543-828F-EF46AA056B75}LANTRINH_ASUS.supermarketsale_nds;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -49,7 +49,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=LANTRINH_ASUS;Initial Catalog=supermarketsale_stage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{B2723C86-D70D-40DE-8CAB-E61C0100CF96}LANTRINH_ASUS.supermarketsale_stage;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=supermarketsale_stage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package1-{B2723C86-D70D-40DE-8CAB-E61C0100CF96}LANTRINH_ASUS.supermarketsale_stage;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -61,7 +61,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=LANTRINH_ASUS;Initial Catalog=supermarketsale_stage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{C4DF2FA0-5748-4385-8ABB-CC8908D8883E}LANTRINH_ASUS.supermarketsale_stage 1;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=supermarketsale_stage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package1-{C4DF2FA0-5748-4385-8ABB-CC8908D8883E}LANTRINH_ASUS.supermarketsale_stage 1;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -8158,7 +8158,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -8180,7 +8182,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -8214,7 +8218,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -8332,7 +8338,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8464,7 +8472,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -8486,7 +8496,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -8508,7 +8520,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -8602,7 +8616,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -8624,7 +8640,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -8646,7 +8664,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8662,25 +8682,69 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
           Id="Package\Product stage -&gt; NDS\Lookup productID in nds"
           TopLeft="594.5,332.5" />
         <NodeLayout
+          Size="173,42"
+          Id="Package\Product stage -&gt; NDS\update product_nds"
+          TopLeft="480.25,533.5" />
+        <NodeLayout
           Size="188,42"
           Id="Package\Product stage -&gt; NDS\insert into product_nds"
           TopLeft="669.805555555556,674.583333333333" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Product stage -&gt; NDS\productline_stage"
+          TopLeft="615.75,7.25" />
+        <NodeLayout
+          Size="233,42"
+          Id="Package\Product stage -&gt; NDS\Lookup productID value in nds 1"
+          TopLeft="449.166666666667,455.833333333333" />
         <NodeLayout
           Size="212,42"
           Id="Package\Product stage -&gt; NDS\Lookup productlineID in nds"
           TopLeft="590,207.5" />
         <NodeLayout
-          Size="173,42"
-          Id="Package\Product stage -&gt; NDS\update product_nds"
-          TopLeft="480.25,533.5" />
-        <NodeLayout
           Size="185,42"
           Id="Package\Product stage -&gt; NDS\Derived Column active"
           TopLeft="606.75,106.25" />
         <NodeLayout
-          Size="163,42"
-          Id="Package\Product stage -&gt; NDS\productline_stage"
-          TopLeft="615.75,7.25" />
+          Size="121,42"
+          Id="Package\Product stage -&gt; NDS\Union All"
+          TopLeft="713.333333333333,580" />
+        <EdgeLayout
+          Id="Package\Product stage -&gt; NDS.Paths[Union All Output 1]"
+          TopLeft="773.833333333333,622">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-10.0277777777778,52.5833333333333"
+              Start="0,0"
+              End="-10.0277777777778,45.0833333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.2916666666666" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.2916666666666"
+                    Point2="0,26.2916666666666"
+                    Point3="-4,26.2916666666666" />
+                  <mssgle:LineSegment
+                    End="-6.02777777777783,26.2916666666666" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-6.02777777777783,26.2916666666666"
+                    Point2="-10.0277777777778,26.2916666666666"
+                    Point3="-10.0277777777778,30.2916666666666" />
+                  <mssgle:LineSegment
+                    End="-10.0277777777778,45.0833333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Product stage -&gt; NDS.Paths[OLE DB Source Output]"
           TopLeft="698.25,49.25">
@@ -8700,7 +8764,141 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Product stage -&gt; NDS.Paths[OLE DB Command Output]"
+          TopLeft="653.25,554.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="60.0833333333335,46.4999999999998"
+              Start="0,0"
+              End="52.5833333333335,46.4999999999998">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="26.0416666666667,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="26.0416666666667,0"
+                    Point2="30.0416666666667,0"
+                    Point3="30.0416666666667,4" />
+                  <mssgle:LineSegment
+                    End="30.0416666666667,42.4999999999998" />
+                  <mssgle:CubicBezierSegment
+                    Point1="30.0416666666667,42.4999999999998"
+                    Point2="30.0416666666667,46.4999999999998"
+                    Point3="34.0416666666667,46.4999999999998" />
+                  <mssgle:LineSegment
+                    End="52.5833333333335,46.4999999999998" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Product stage -&gt; NDS.Paths[Lookup No Match Output1]"
+          TopLeft="723.166666666667,374.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="50.6666666666667,205.5"
+              Start="0,0"
+              End="50.6666666666667,198">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,79.2034587995931" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,79.2034587995931"
+                    Point2="0,83.2034587995931"
+                    Point3="4,83.2034587995931" />
+                  <mssgle:LineSegment
+                    End="46.6666666666667,83.2034587995931" />
+                  <mssgle:CubicBezierSegment
+                    Point1="46.6666666666667,83.2034587995931"
+                    Point2="50.6666666666667,83.2034587995931"
+                    Point3="50.6666666666667,87.2034587995931" />
+                  <mssgle:LineSegment
+                    End="50.6666666666667,198" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-30.4730533854166,88.2034587995931,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Product stage -&gt; NDS.Paths[Lookup No Match Output]"
+          TopLeft="566.208333333333,497.833333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,35.6666666666668"
+              Start="0,0"
+              End="0,28.1666666666668">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.1666666666668" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-55.80638671875,8.2786458333334,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Product stage -&gt; NDS.Paths[Lookup Match Output1]"
+          TopLeft="660.833333333333,374.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-95.1666666666669,81.3333333333334"
+              Start="0,0"
+              End="-95.1666666666669,73.8333333333334">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.9304849101391" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.9304849101391"
+                    Point2="0,32.9304849101391"
+                    Point3="-4,32.9304849101391" />
+                  <mssgle:LineSegment
+                    End="-91.1666666666669,32.9304849101391" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-91.1666666666669,32.9304849101391"
+                    Point2="-95.1666666666669,32.9304849101391"
+                    Point3="-95.1666666666669,36.9304849101391" />
+                  <mssgle:LineSegment
+                    End="-95.1666666666669,73.8333333333334" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-95.7747200520834,37.9304849101391,96.3827734375,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -8746,179 +8944,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="233,42"
-          Id="Package\Product stage -&gt; NDS\Lookup productID value in nds 1"
-          TopLeft="449.166666666667,455.833333333333" />
-        <EdgeLayout
-          Id="Package\Product stage -&gt; NDS.Paths[Lookup Match Output1]"
-          TopLeft="660.833333333333,374.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-95.1666666666669,81.3333333333334"
-              Start="0,0"
-              End="-95.1666666666669,73.8333333333334">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.9304849101391" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28.9304849101391"
-                    Point2="0,32.9304849101391"
-                    Point3="-4,32.9304849101391" />
-                  <mssgle:LineSegment
-                    End="-91.1666666666669,32.9304849101391" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-91.1666666666669,32.9304849101391"
-                    Point2="-95.1666666666669,32.9304849101391"
-                    Point3="-95.1666666666669,36.9304849101391" />
-                  <mssgle:LineSegment
-                    End="-95.1666666666669,73.8333333333334" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-95.7747200520834,37.9304849101391,96.3827734375,11.609375"
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Product stage -&gt; NDS.Paths[Lookup No Match Output]"
-          TopLeft="566.208333333333,497.833333333333">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,35.6666666666668"
-              Start="0,0"
-              End="0,28.1666666666668">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.1666666666668" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-55.80638671875,8.2786458333334,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="121,42"
-          Id="Package\Product stage -&gt; NDS\Union All"
-          TopLeft="713.333333333333,580" />
-        <EdgeLayout
-          Id="Package\Product stage -&gt; NDS.Paths[Lookup No Match Output1]"
-          TopLeft="723.166666666667,374.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="50.6666666666667,205.5"
-              Start="0,0"
-              End="50.6666666666667,198">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,79.2034587995931" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,79.2034587995931"
-                    Point2="0,83.2034587995931"
-                    Point3="4,83.2034587995931" />
-                  <mssgle:LineSegment
-                    End="46.6666666666667,83.2034587995931" />
-                  <mssgle:CubicBezierSegment
-                    Point1="46.6666666666667,83.2034587995931"
-                    Point2="50.6666666666667,83.2034587995931"
-                    Point3="50.6666666666667,87.2034587995931" />
-                  <mssgle:LineSegment
-                    End="50.6666666666667,198" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-30.4730533854166,88.2034587995931,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Product stage -&gt; NDS.Paths[OLE DB Command Output]"
-          TopLeft="653.25,554.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="60.0833333333335,46.4999999999998"
-              Start="0,0"
-              End="52.5833333333335,46.4999999999998">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="26.0416666666667,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="26.0416666666667,0"
-                    Point2="30.0416666666667,0"
-                    Point3="30.0416666666667,4" />
-                  <mssgle:LineSegment
-                    End="30.0416666666667,42.4999999999998" />
-                  <mssgle:CubicBezierSegment
-                    Point1="30.0416666666667,42.4999999999998"
-                    Point2="30.0416666666667,46.4999999999998"
-                    Point3="34.0416666666667,46.4999999999998" />
-                  <mssgle:LineSegment
-                    End="52.5833333333335,46.4999999999998" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Product stage -&gt; NDS.Paths[Union All Output 1]"
-          TopLeft="773.833333333333,622">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-10.0277777777778,52.5833333333333"
-              Start="0,0"
-              End="-10.0277777777778,45.0833333333333">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.2916666666666" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22.2916666666666"
-                    Point2="0,26.2916666666666"
-                    Point3="-4,26.2916666666666" />
-                  <mssgle:LineSegment
-                    End="-6.02777777777783,26.2916666666666" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-6.02777777777783,26.2916666666666"
-                    Point2="-10.0277777777778,26.2916666666666"
-                    Point3="-10.0277777777778,30.2916666666666" />
-                  <mssgle:LineSegment
-                    End="-10.0277777777778,45.0833333333333" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8931,6 +8959,42 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
         <Name>UsedTableName</Name>
         <Value
           type="q2:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q3:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q4:string">false</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Product stage -&gt; NDS\productline_stage">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Product stage -&gt; NDS\Lookup productID value in nds 1">
+    <Properties>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q2:string">[dbo].[product_nds]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
@@ -8970,66 +9034,39 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Product stage -&gt; NDS\productline_stage">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Productline stage -&gt; NDS">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="212,42"
-          Id="Package\Productline stage -&gt; NDS\Lookup productlineID in nds"
-          TopLeft="590,311" />
-        <NodeLayout
-          Size="190,42"
-          Id="Package\Productline stage -&gt; NDS\update productline_nds"
-          TopLeft="457,522" />
+          Size="163,42"
+          Id="Package\Productline stage -&gt; NDS\productline_stage"
+          TopLeft="612,111" />
         <NodeLayout
           Size="204,42"
           Id="Package\Productline stage -&gt; NDS\insert into productline_nds"
           TopLeft="617,699" />
         <NodeLayout
-          Size="163,42"
-          Id="Package\Productline stage -&gt; NDS\productline_stage"
-          TopLeft="612,111" />
+          Size="190,42"
+          Id="Package\Productline stage -&gt; NDS\update productline_nds"
+          TopLeft="457,522" />
+        <NodeLayout
+          Size="240,42"
+          Id="Package\Productline stage -&gt; NDS\Lookup productlineID value in nds"
+          TopLeft="436,399" />
+        <NodeLayout
+          Size="212,42"
+          Id="Package\Productline stage -&gt; NDS\Lookup productlineID in nds"
+          TopLeft="590,311" />
         <NodeLayout
           Size="185,42"
           Id="Package\Productline stage -&gt; NDS\Derived Column active"
           TopLeft="603,210" />
-        <EdgeLayout
-          Id="Package\Productline stage -&gt; NDS.Paths[OLE DB Source Output]"
-          TopLeft="694.5,153">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,57"
-              Start="0,0"
-              End="0,49.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,49.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="121,42"
+          Id="Package\Productline stage -&gt; NDS\Union All"
+          TopLeft="654,590" />
         <EdgeLayout
           Id="Package\Productline stage -&gt; NDS.Paths[Derived Column Output]"
           TopLeft="695.75,252">
@@ -9049,98 +9086,56 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="240,42"
-          Id="Package\Productline stage -&gt; NDS\Lookup productlineID value in nds"
-          TopLeft="436,399" />
-        <EdgeLayout
-          Id="Package\Productline stage -&gt; NDS.Paths[Lookup Match Output]"
-          TopLeft="662,353">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-106,46"
-              Start="0,0"
-              End="-106,38.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,14.6067415730337" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,14.6067415730337"
-                    Point2="0,18.6067415730337"
-                    Point3="-4,18.6067415730337" />
-                  <mssgle:LineSegment
-                    End="-102,18.6067415730337" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-102,18.6067415730337"
-                    Point2="-106,18.6067415730337"
-                    Point3="-106,22.6067415730337" />
-                  <mssgle:LineSegment
-                    End="-106,38.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-101.19138671875,23.6067415730337,96.3827734375,11.609375"
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Productline stage -&gt; NDS.Paths[Lookup No Match Output]"
-          TopLeft="554,441">
+          Id="Package\Productline stage -&gt; NDS.Paths[Union All Output 1]"
+          TopLeft="716.75,632">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,81"
+              EndConnector="0,67"
               Start="0,0"
-              End="0,73.5">
+              End="0,59.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,73.5" />
+                    End="0,59.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-55.80638671875,30.9453125,111.6127734375,11.609375"
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="121,42"
-          Id="Package\Productline stage -&gt; NDS\Union All"
-          TopLeft="654,590" />
         <EdgeLayout
-          Id="Package\Productline stage -&gt; NDS.Paths[Lookup No Match Output1]"
-          TopLeft="731.666666666667,353">
+          Id="Package\Productline stage -&gt; NDS.Paths[OLE DB Source Output]"
+          TopLeft="694.5,153">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,237"
+              EndConnector="0,57"
               Start="0,0"
-              End="0,229.5">
+              End="0,49.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,229.5" />
+                    End="0,49.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-55.80638671875,108.9453125,111.6127734375,11.609375"
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -9175,29 +9170,93 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Productline stage -&gt; NDS.Paths[Union All Output 1]"
-          TopLeft="716.75,632">
+          Id="Package\Productline stage -&gt; NDS.Paths[Lookup No Match Output1]"
+          TopLeft="731.666666666667,353">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,67"
+              EndConnector="0,237"
               Start="0,0"
-              End="0,59.5">
+              End="0,229.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,59.5" />
+                    End="0,229.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-55.80638671875,108.9453125,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Productline stage -&gt; NDS.Paths[Lookup No Match Output]"
+          TopLeft="554,441">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,81"
+              Start="0,0"
+              End="0,73.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,73.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-55.80638671875,30.9453125,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Productline stage -&gt; NDS.Paths[Lookup Match Output]"
+          TopLeft="662,353">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-106,46"
+              Start="0,0"
+              End="-106,38.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.6067415730337" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.6067415730337"
+                    Point2="0,18.6067415730337"
+                    Point3="-4,18.6067415730337" />
+                  <mssgle:LineSegment
+                    End="-102,18.6067415730337" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-102,18.6067415730337"
+                    Point2="-106,18.6067415730337"
+                    Point3="-106,22.6067415730337" />
+                  <mssgle:LineSegment
+                    End="-106,38.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-101.19138671875,23.6067415730337,96.3827734375,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9322,7 +9381,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9668,7 +9729,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9776,29 +9839,6 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
         <Name>OverwriteParamsSQLProp</Name>
         <Value
           type="q4:string">false</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Product stage -&gt; NDS\Lookup productID value in nds 1">
-    <Properties>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q2:string">[dbo].[product_nds]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q3:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q4:boolean">false</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
