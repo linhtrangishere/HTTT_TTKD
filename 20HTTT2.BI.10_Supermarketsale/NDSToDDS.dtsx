@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="NDSToDDS"
   DTS:PackageType="5"
-  DTS:VersionBuild="122"
-  DTS:VersionGUID="{84357F81-1377-4D60-8DD6-5DC910E63B57}">
+  DTS:VersionBuild="123"
+  DTS:VersionGUID="{BABB2D52-025F-45AF-8EE2-B30659A4749E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -294,7 +294,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET dds_city"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -316,7 +316,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET dds_customer_type"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -338,7 +338,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET dds_date"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="3">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -360,7 +360,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET dds_gender"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -382,7 +382,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET dds_payment_type"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="5">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -404,7 +404,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET dds_product"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="5">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -426,7 +426,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET dds_productline"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="5">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -448,7 +448,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get, set CET dds_city"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -470,7 +470,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get, set CET dds_customer_type"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -492,7 +492,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get, set CET dds_date"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="3">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -514,7 +514,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get, set CET dds_gender"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -536,7 +536,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get, set CET dds_payment_type"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="5">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -558,7 +558,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get, set CET dds_product"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="5">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -580,7 +580,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get, set CET dds_productline"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="5">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -5614,6 +5614,12 @@ set active = ? where paymenttype_sk= ?</property>
                           cachedName="Active"
                           externalMetadataColumnId="Package\Sequence Container\Populate dds_product\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[Active]"
                           lineageId="Package\Sequence Container\Populate dds_product\Union All.Outputs[Union All Output 1].Columns[Active]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Populate dds_product\Insert Destination.Inputs[OLE DB Destination Input].Columns[ProductID_SK]"
+                          cachedDataType="i4"
+                          cachedName="ProductID_SK"
+                          externalMetadataColumnId="Package\Sequence Container\Populate dds_product\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProductID_SK]"
+                          lineageId="Package\Sequence Container\Populate dds_product\Union All.Outputs[Union All Output 1].Columns[ProductID_SK]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -11697,7 +11703,9 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11719,7 +11727,9 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11741,7 +11751,9 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11763,7 +11775,9 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11797,7 +11811,9 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12736,7 +12752,9 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12758,7 +12776,9 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12792,7 +12812,9 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12874,7 +12896,9 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12896,7 +12920,9 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -13006,9 +13032,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13030,9 +13054,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13066,9 +13088,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13222,9 +13242,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13246,9 +13264,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -13721,13 +13737,13 @@ where [refTable].[productid_sk] = ?</property>
           Id="Package\Sequence Container 1\Populate fact_sales\sales_nds"
           TopLeft="227.545454545455,0.0909090909090864" />
         <NodeLayout
-          Size="189,42"
-          Id="Package\Sequence Container 1\Populate fact_sales\Lookup datetime in dds"
-          TopLeft="186,679" />
-        <NodeLayout
           Size="171,42"
           Id="Package\Sequence Container 1\Populate fact_sales\set active to 0 (old)"
           TopLeft="332,894" />
+        <NodeLayout
+          Size="189,42"
+          Id="Package\Sequence Container 1\Populate fact_sales\Lookup datetime in dds"
+          TopLeft="186,679" />
         <NodeLayout
           Size="209,42"
           Id="Package\Sequence Container 1\Populate fact_sales\Lookup paymenttype in dds"
@@ -13741,33 +13757,33 @@ where [refTable].[productid_sk] = ?</property>
           Id="Package\Sequence Container 1\Populate fact_sales\Lookup branch in dds"
           TopLeft="198.454545454545,73" />
         <NodeLayout
-          Size="181,42"
-          Id="Package\Sequence Container 1\Populate fact_sales\Lookup gender in dds"
-          TopLeft="192.090909090909,395.449494949495" />
+          Size="121,42"
+          Id="Package\Sequence Container 1\Populate fact_sales\Union All"
+          TopLeft="203,1066" />
         <NodeLayout
           Size="195,42"
           Id="Package\Sequence Container 1\Populate fact_sales\Lookup productID in dds"
           TopLeft="191.181818181818,167.545454545455" />
         <NodeLayout
-          Size="121,42"
-          Id="Package\Sequence Container 1\Populate fact_sales\Union All"
-          TopLeft="203,1066" />
+          Size="181,42"
+          Id="Package\Sequence Container 1\Populate fact_sales\Lookup gender in dds"
+          TopLeft="192.090909090909,395.449494949495" />
         <NodeLayout
-          Size="215,42"
-          Id="Package\Sequence Container 1\Populate fact_sales\Lookup customer type in dds"
-          TopLeft="186.636363636364,274.540404040404" />
+          Size="166,42"
+          Id="Package\Sequence Container 1\Populate fact_sales\update in old rows"
+          TopLeft="330,981" />
         <NodeLayout
           Size="177,42"
           Id="Package\Sequence Container 1\Populate fact_sales\set active to 1 (new)"
           TopLeft="174,1137" />
         <NodeLayout
+          Size="215,42"
+          Id="Package\Sequence Container 1\Populate fact_sales\Lookup customer type in dds"
+          TopLeft="186.636363636364,274.540404040404" />
+        <NodeLayout
           Size="176,42"
           Id="Package\Sequence Container 1\Populate fact_sales\insert into fact_sales"
           TopLeft="182,1223" />
-        <NodeLayout
-          Size="166,42"
-          Id="Package\Sequence Container 1\Populate fact_sales\update in old rows"
-          TopLeft="330,981" />
         <EdgeLayout
           Id="Package\Sequence Container 1\Populate fact_sales.Paths[Union All Output 1]"
           TopLeft="263,1108">
@@ -13787,7 +13803,9 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13809,7 +13827,9 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13843,7 +13863,9 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14081,7 +14103,9 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14103,7 +14127,9 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
