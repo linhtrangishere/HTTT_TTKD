@@ -62,7 +62,7 @@ GO
 
 CREATE TABLE dim_date
 (
-	DateID_SK int primary key,
+	DateID_SK int identity (1,1) primary key,
 	Date date null, -- Full date in mm/dd/yyyy format
 	AnsiDate char(10) null, --Full date in yyyy-mm-dd format
 	SqlDate datetime, --Full date in SQL Server datetime data type.
