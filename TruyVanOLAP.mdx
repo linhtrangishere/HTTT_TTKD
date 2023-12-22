@@ -1,0 +1,76 @@
+﻿-- Tình hình mua hàng của khách hàng theo từng chi nhánh
+SELECT
+  {
+  ([Measures].[Total])
+  } 
+  ON AXIS(0),
+  NON EMPTY{
+  ([Dim City].[City].[City])} ON AXIS(1)
+FROM [Supermarketsale Dds];
+
+-- Tình hình mua hàng của khách hàng theo từng loại sản phẩm:
+
+SELECT
+  {
+  ([Measures].[Total])
+  } 
+  ON AXIS(0),
+  NON EMPTY{
+  (
+   [Dim Product].[Product Line].[Product Line]
+   )} ON AXIS(1)
+FROM [Supermarketsale Dds];
+
+-- Tình hình mua hàng của khách hàng theo thời gian:
+
+SELECT
+  {
+  ([Measures].[Total])
+  } 
+  ON AXIS(0),
+  NON EMPTY{
+  (
+   [Dim Date].[Sql Date].[Sql Date]
+   )} ON AXIS(1)
+FROM [Supermarketsale Dds];
+
+-- Tình hình mua hàng của khách hàng theo từng hình thức thanh toán
+SELECT
+  {
+  ([Measures].[Total])
+  } 
+  ON AXIS(0),
+  NON EMPTY{
+  (
+   [Dim Payment Type].[Payment Type].[Payment Type],
+   [Dim Date].[Sql Date].[Sql Date])} ON AXIS(1)
+FROM [Supermarketsale Dds];
+-- Doanh thu theo từng chi nhánh, từng loại sản phẩm, theo thời gian, hình thức thanh toán
+SELECT
+  {
+  [Measures].[Total]
+  } 
+  ON AXIS(0),
+  NON EMPTY{
+  ([Dim City].[City].[City],
+   [Dim Product].[Product Line].[Product Line], 
+   [Dim Customer Type].[Customer Type].[Customer Type],
+   [Dim Payment Type].[Payment Type].[Payment Type],
+   [Dim Date].[Sql Date].[Sql Date])} ON AXIS(1)
+FROM [Supermarketsale Dds];
+
+-- Lợi nhuận ròng, doanh thu, doanh số theo từng chi nhánh, từng loại sản phẩm, theo thời gian, hình thức thanh toán:
+SELECT
+  {
+  [Measures].[Quantity],
+  [Measures].[Total],
+  [Measures].[Gross Income]
+  } 
+  ON AXIS(0),
+  NON EMPTY{
+  ([Dim City].[City].[City],
+   [Dim Product].[Product Line].[Product Line], 
+   [Dim Customer Type].[Customer Type].[Customer Type],
+   [Dim Payment Type].[Payment Type].[Payment Type],
+   [Dim Date].[Sql Date].[Sql Date])} ON AXIS(1)
+FROM [Supermarketsale Dds];
