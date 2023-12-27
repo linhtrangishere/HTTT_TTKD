@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="NDSToDDS"
   DTS:PackageType="5"
-  DTS:VersionBuild="129"
-  DTS:VersionGUID="{05409E2D-2679-4251-AACB-6340240DA87D}">
+  DTS:VersionBuild="132"
+  DTS:VersionGUID="{6C75F132-26FE-41E0-9A4E-52C8C6A8A0A2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -294,7 +294,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET dds_city"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -316,7 +316,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET dds_customer_type"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -338,7 +338,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET dds_date"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="3">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -360,7 +360,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET dds_gender"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -382,7 +382,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET dds_payment_type"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="5">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -404,7 +404,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET dds_product"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="5">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -426,7 +426,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET dds_productline"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="5">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -448,7 +448,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get, set CET dds_city"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -470,7 +470,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get, set CET dds_customer_type"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -492,7 +492,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get, set CET dds_date"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="3">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -514,7 +514,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get, set CET dds_gender"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -536,7 +536,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get, set CET dds_payment_type"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="5">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -558,7 +558,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get, set CET dds_product"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="5">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -580,7 +580,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get, set CET dds_productline"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="5">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -3810,11 +3810,11 @@ where [refTable].[gender] = ?</property>
               version="1">
               <components>
                 <component
-                  refId="Package\Sequence Container\Populate dds_payment_type\Insert dim_customer_type"
+                  refId="Package\Sequence Container\Populate dds_payment_type\Insert dim_payment_type"
                   componentClassID="Microsoft.OLEDBDestination"
                   contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                   description="OLE DB Destination"
-                  name="Insert dim_customer_type"
+                  name="Insert dim_payment_type"
                   usesDispositions="true"
                   version="4">
                   <properties>
@@ -3867,7 +3867,7 @@ where [refTable].[gender] = ?</property>
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\Sequence Container\Populate dds_payment_type\Insert dim_customer_type.Connections[OleDbConnection]"
+                      refId="Package\Sequence Container\Populate dds_payment_type\Insert dim_payment_type.Connections[OleDbConnection]"
                       connectionManagerID="Package.ConnectionManagers[LANTRINH_ASUS.supermarketsale_dds]"
                       connectionManagerRefId="Package.ConnectionManagers[LANTRINH_ASUS.supermarketsale_dds]"
                       description="The OLE DB runtime connection used to access the database."
@@ -3875,45 +3875,45 @@ where [refTable].[gender] = ?</property>
                   </connections>
                   <inputs>
                     <input
-                      refId="Package\Sequence Container\Populate dds_payment_type\Insert dim_customer_type.Inputs[OLE DB Destination Input]"
+                      refId="Package\Sequence Container\Populate dds_payment_type\Insert dim_payment_type.Inputs[OLE DB Destination Input]"
                       errorOrTruncationOperation="Insert"
                       errorRowDisposition="FailComponent"
                       hasSideEffects="true"
                       name="OLE DB Destination Input">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Sequence Container\Populate dds_payment_type\Insert dim_customer_type.Inputs[OLE DB Destination Input].Columns[Active]"
+                          refId="Package\Sequence Container\Populate dds_payment_type\Insert dim_payment_type.Inputs[OLE DB Destination Input].Columns[Active]"
                           cachedDataType="bool"
                           cachedName="Active"
-                          externalMetadataColumnId="Package\Sequence Container\Populate dds_payment_type\Insert dim_customer_type.Inputs[OLE DB Destination Input].ExternalColumns[Active]"
+                          externalMetadataColumnId="Package\Sequence Container\Populate dds_payment_type\Insert dim_payment_type.Inputs[OLE DB Destination Input].ExternalColumns[Active]"
                           lineageId="Package\Sequence Container\Populate dds_payment_type\payment_type_nds.Outputs[OLE DB Source Output].Columns[Active]" />
                         <inputColumn
-                          refId="Package\Sequence Container\Populate dds_payment_type\Insert dim_customer_type.Inputs[OLE DB Destination Input].Columns[PaymentType_SK]"
+                          refId="Package\Sequence Container\Populate dds_payment_type\Insert dim_payment_type.Inputs[OLE DB Destination Input].Columns[PaymentType_SK]"
                           cachedDataType="i4"
                           cachedName="PaymentType_SK"
-                          externalMetadataColumnId="Package\Sequence Container\Populate dds_payment_type\Insert dim_customer_type.Inputs[OLE DB Destination Input].ExternalColumns[PaymentType_SK]"
+                          externalMetadataColumnId="Package\Sequence Container\Populate dds_payment_type\Insert dim_payment_type.Inputs[OLE DB Destination Input].ExternalColumns[PaymentType_SK]"
                           lineageId="Package\Sequence Container\Populate dds_payment_type\payment_type_nds.Outputs[OLE DB Source Output].Columns[PaymentType_SK]" />
                         <inputColumn
-                          refId="Package\Sequence Container\Populate dds_payment_type\Insert dim_customer_type.Inputs[OLE DB Destination Input].Columns[PaymentType]"
+                          refId="Package\Sequence Container\Populate dds_payment_type\Insert dim_payment_type.Inputs[OLE DB Destination Input].Columns[PaymentType]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="20"
                           cachedName="PaymentType"
-                          externalMetadataColumnId="Package\Sequence Container\Populate dds_payment_type\Insert dim_customer_type.Inputs[OLE DB Destination Input].ExternalColumns[PaymentType]"
+                          externalMetadataColumnId="Package\Sequence Container\Populate dds_payment_type\Insert dim_payment_type.Inputs[OLE DB Destination Input].ExternalColumns[PaymentType]"
                           lineageId="Package\Sequence Container\Populate dds_payment_type\payment_type_nds.Outputs[OLE DB Source Output].Columns[PaymentType]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\Populate dds_payment_type\Insert dim_customer_type.Inputs[OLE DB Destination Input].ExternalColumns[Active]"
+                          refId="Package\Sequence Container\Populate dds_payment_type\Insert dim_payment_type.Inputs[OLE DB Destination Input].ExternalColumns[Active]"
                           dataType="bool"
                           name="Active" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\Populate dds_payment_type\Insert dim_customer_type.Inputs[OLE DB Destination Input].ExternalColumns[PaymentType_SK]"
+                          refId="Package\Sequence Container\Populate dds_payment_type\Insert dim_payment_type.Inputs[OLE DB Destination Input].ExternalColumns[PaymentType_SK]"
                           dataType="i4"
                           name="PaymentType_SK" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\Populate dds_payment_type\Insert dim_customer_type.Inputs[OLE DB Destination Input].ExternalColumns[PaymentType]"
+                          refId="Package\Sequence Container\Populate dds_payment_type\Insert dim_payment_type.Inputs[OLE DB Destination Input].ExternalColumns[PaymentType]"
                           codePage="1252"
                           dataType="str"
                           length="20"
@@ -3923,22 +3923,22 @@ where [refTable].[gender] = ?</property>
                   </inputs>
                   <outputs>
                     <output
-                      refId="Package\Sequence Container\Populate dds_payment_type\Insert dim_customer_type.Outputs[OLE DB Destination Error Output]"
+                      refId="Package\Sequence Container\Populate dds_payment_type\Insert dim_payment_type.Outputs[OLE DB Destination Error Output]"
                       exclusionGroup="1"
                       isErrorOut="true"
                       name="OLE DB Destination Error Output"
-                      synchronousInputId="Package\Sequence Container\Populate dds_payment_type\Insert dim_customer_type.Inputs[OLE DB Destination Input]">
+                      synchronousInputId="Package\Sequence Container\Populate dds_payment_type\Insert dim_payment_type.Inputs[OLE DB Destination Input]">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Sequence Container\Populate dds_payment_type\Insert dim_customer_type.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          refId="Package\Sequence Container\Populate dds_payment_type\Insert dim_payment_type.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\Sequence Container\Populate dds_payment_type\Insert dim_customer_type.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          lineageId="Package\Sequence Container\Populate dds_payment_type\Insert dim_payment_type.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\Sequence Container\Populate dds_payment_type\Insert dim_customer_type.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          refId="Package\Sequence Container\Populate dds_payment_type\Insert dim_payment_type.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\Sequence Container\Populate dds_payment_type\Insert dim_customer_type.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          lineageId="Package\Sequence Container\Populate dds_payment_type\Insert dim_payment_type.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -3947,11 +3947,11 @@ where [refTable].[gender] = ?</property>
                   </outputs>
                 </component>
                 <component
-                  refId="Package\Sequence Container\Populate dds_payment_type\lookup customer_type in dim_customer_type"
+                  refId="Package\Sequence Container\Populate dds_payment_type\lookup payment_type in dim_payment_type"
                   componentClassID="Microsoft.Lookup"
                   contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
                   description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
-                  name="lookup customer_type in dim_customer_type"
+                  name="lookup payment_type in dim_payment_type"
                   usesDispositions="true"
                   version="6">
                   <properties>
@@ -4015,7 +4015,7 @@ where [refTable].[paymenttype] = ?</property>
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\Sequence Container\Populate dds_payment_type\lookup customer_type in dim_customer_type.Connections[OleDbConnection]"
+                      refId="Package\Sequence Container\Populate dds_payment_type\lookup payment_type in dim_payment_type.Connections[OleDbConnection]"
                       connectionManagerID="Package.ConnectionManagers[LANTRINH_ASUS.supermarketsale_dds]"
                       connectionManagerRefId="Package.ConnectionManagers[LANTRINH_ASUS.supermarketsale_dds]"
                       description="Connection manager used to access lookup data."
@@ -4023,11 +4023,11 @@ where [refTable].[paymenttype] = ?</property>
                   </connections>
                   <inputs>
                     <input
-                      refId="Package\Sequence Container\Populate dds_payment_type\lookup customer_type in dim_customer_type.Inputs[Lookup Input]"
+                      refId="Package\Sequence Container\Populate dds_payment_type\lookup payment_type in dim_payment_type.Inputs[Lookup Input]"
                       name="Lookup Input">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Sequence Container\Populate dds_payment_type\lookup customer_type in dim_customer_type.Inputs[Lookup Input].Columns[PaymentType]"
+                          refId="Package\Sequence Container\Populate dds_payment_type\lookup payment_type in dim_payment_type.Inputs[Lookup Input].Columns[PaymentType]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="20"
@@ -4050,38 +4050,38 @@ where [refTable].[paymenttype] = ?</property>
                   </inputs>
                   <outputs>
                     <output
-                      refId="Package\Sequence Container\Populate dds_payment_type\lookup customer_type in dim_customer_type.Outputs[Lookup Match Output]"
+                      refId="Package\Sequence Container\Populate dds_payment_type\lookup payment_type in dim_payment_type.Outputs[Lookup Match Output]"
                       errorOrTruncationOperation="Lookup"
                       exclusionGroup="1"
                       name="Lookup Match Output"
-                      synchronousInputId="Package\Sequence Container\Populate dds_payment_type\lookup customer_type in dim_customer_type.Inputs[Lookup Input]">
+                      synchronousInputId="Package\Sequence Container\Populate dds_payment_type\lookup payment_type in dim_payment_type.Inputs[Lookup Input]">
                       <externalMetadataColumns />
                     </output>
                     <output
-                      refId="Package\Sequence Container\Populate dds_payment_type\lookup customer_type in dim_customer_type.Outputs[Lookup No Match Output]"
+                      refId="Package\Sequence Container\Populate dds_payment_type\lookup payment_type in dim_payment_type.Outputs[Lookup No Match Output]"
                       description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
                       exclusionGroup="1"
                       name="Lookup No Match Output"
-                      synchronousInputId="Package\Sequence Container\Populate dds_payment_type\lookup customer_type in dim_customer_type.Inputs[Lookup Input]">
+                      synchronousInputId="Package\Sequence Container\Populate dds_payment_type\lookup payment_type in dim_payment_type.Inputs[Lookup Input]">
                       <externalMetadataColumns />
                     </output>
                     <output
-                      refId="Package\Sequence Container\Populate dds_payment_type\lookup customer_type in dim_customer_type.Outputs[Lookup Error Output]"
+                      refId="Package\Sequence Container\Populate dds_payment_type\lookup payment_type in dim_payment_type.Outputs[Lookup Error Output]"
                       exclusionGroup="1"
                       isErrorOut="true"
                       name="Lookup Error Output"
-                      synchronousInputId="Package\Sequence Container\Populate dds_payment_type\lookup customer_type in dim_customer_type.Inputs[Lookup Input]">
+                      synchronousInputId="Package\Sequence Container\Populate dds_payment_type\lookup payment_type in dim_payment_type.Inputs[Lookup Input]">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Sequence Container\Populate dds_payment_type\lookup customer_type in dim_customer_type.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                          refId="Package\Sequence Container\Populate dds_payment_type\lookup payment_type in dim_payment_type.Outputs[Lookup Error Output].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\Sequence Container\Populate dds_payment_type\lookup customer_type in dim_customer_type.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                          lineageId="Package\Sequence Container\Populate dds_payment_type\lookup payment_type in dim_payment_type.Outputs[Lookup Error Output].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\Sequence Container\Populate dds_payment_type\lookup customer_type in dim_customer_type.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                          refId="Package\Sequence Container\Populate dds_payment_type\lookup payment_type in dim_payment_type.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\Sequence Container\Populate dds_payment_type\lookup customer_type in dim_customer_type.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                          lineageId="Package\Sequence Container\Populate dds_payment_type\lookup payment_type in dim_payment_type.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -4351,17 +4351,17 @@ where [refTable].[paymenttype] = ?</property>
               <paths>
                 <path
                   refId="Package\Sequence Container\Populate dds_payment_type.Paths[Derived Column Output]"
-                  endId="Package\Sequence Container\Populate dds_payment_type\Insert dim_customer_type.Inputs[OLE DB Destination Input]"
+                  endId="Package\Sequence Container\Populate dds_payment_type\Insert dim_payment_type.Inputs[OLE DB Destination Input]"
                   name="Derived Column Output"
                   startId="Package\Sequence Container\Populate dds_payment_type\set active as 1 (new rows).Outputs[Derived Column Output]" />
                 <path
                   refId="Package\Sequence Container\Populate dds_payment_type.Paths[Lookup No Match Output]"
                   endId="Package\Sequence Container\Populate dds_payment_type\set active as 1 (new rows).Inputs[Derived Column Input]"
                   name="Lookup No Match Output"
-                  startId="Package\Sequence Container\Populate dds_payment_type\lookup customer_type in dim_customer_type.Outputs[Lookup No Match Output]" />
+                  startId="Package\Sequence Container\Populate dds_payment_type\lookup payment_type in dim_payment_type.Outputs[Lookup No Match Output]" />
                 <path
                   refId="Package\Sequence Container\Populate dds_payment_type.Paths[OLE DB Source Output]"
-                  endId="Package\Sequence Container\Populate dds_payment_type\lookup customer_type in dim_customer_type.Inputs[Lookup Input]"
+                  endId="Package\Sequence Container\Populate dds_payment_type\lookup payment_type in dim_payment_type.Inputs[Lookup Input]"
                   name="OLE DB Source Output"
                   startId="Package\Sequence Container\Populate dds_payment_type\payment_type_nds.Outputs[OLE DB Source Output]" />
               </paths>
@@ -6989,7 +6989,7 @@ where [refTable].[productlineid_sk] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Set LSET dds_city"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -7006,7 +7006,7 @@ where [refTable].[productlineid_sk] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Set LSET dds_customer_type"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -7023,7 +7023,7 @@ where [refTable].[productlineid_sk] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Set LSET dds_date"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="3">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -7040,7 +7040,7 @@ where [refTable].[productlineid_sk] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Set LSET dds_gender"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -7057,7 +7057,7 @@ where [refTable].[productlineid_sk] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Set LSET dds_payment_type"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="5">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -7074,7 +7074,7 @@ where [refTable].[productlineid_sk] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Set LSET dds_productline, dds_product"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="5">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -10046,6 +10046,23 @@ where [refTable].[productid_sk] = ?</property>
             </pipeline>
           </DTS:ObjectData>
         </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container 1\Set LSET fact_sales"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{457e978d-da4e-440a-aea4-763f3b8aeec1}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Set LSET fact_sales"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{22C800BD-68A2-4936-A655-B27CEC998F83}"
+              SQLTask:SqlStatementSource="update data_flow set lset = cet  where tenbang = 'fact_sales';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
       </DTS:Executables>
       <DTS:PrecedenceConstraints>
         <DTS:PrecedenceConstraint
@@ -10056,6 +10073,14 @@ where [refTable].[productid_sk] = ?</property>
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
           DTS:To="Package\Sequence Container 1\Populate fact_sales" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container 1.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{8A7BA148-337F-4AE1-957D-C60C52674448}"
+          DTS:From="Package\Sequence Container 1\Populate fact_sales"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\Sequence Container 1\Set LSET fact_sales" />
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container 1.PrecedenceConstraints[Constraint 3]"
           DTS:CreationName=""
@@ -10782,13 +10807,39 @@ where [refTable].[productid_sk] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Sequence Container 1\Set LSET fact_sales"
+          TopLeft="13.1746031746028,268.111111111111" />
+        <EdgeLayout
+          Id="Package\Sequence Container 1.PrecedenceConstraints[Constraint 1]"
+          TopLeft="102.151404151404,233.974358974359">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,34.1367521367521"
+              Start="0,0"
+              End="0,26.6367521367521">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.6367521367521" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <GroupLayout
           Text="Fact"
           ParentId="Package\Sequence Container 1"
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="198,276"
-          Size="198,319"
+          PanelSize="198,365"
+          Size="198,408"
           Id="467c0a13-b95a-4873-8bd3-44051433198d"
           TopLeft="20.2500000000003,9.25">
           <GroupLayout.ChildrenIds>
@@ -10797,13 +10848,15 @@ where [refTable].[productid_sk] = ?</property>
             <s:String>Package\Sequence Container 1\Populate fact_sales</s:String>
             <s:String>Package\Sequence Container 1.PrecedenceConstraints[Constraint]</s:String>
             <s:String>Package\Sequence Container 1.PrecedenceConstraints[Constraint 3]</s:String>
+            <s:String>Package\Sequence Container 1\Set LSET fact_sales</s:String>
+            <s:String>Package\Sequence Container 1.PrecedenceConstraints[Constraint 1]</s:String>
           </GroupLayout.ChildrenIds>
         </GroupLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="236,379"
-          Size="236,422"
+          PanelSize="236,472"
+          Size="236,515"
           Id="Package\Sequence Container 1"
           TopLeft="730,1020" />
         <EdgeLayout
@@ -11174,21 +11227,21 @@ where [refTable].[productid_sk] = ?</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="203,42"
-          Id="Package\Sequence Container\Populate dds_customer_type\Insert dim_customer_type"
-          TopLeft="171.333333333333,331.166666666667" />
-        <NodeLayout
-          Size="203,42"
-          Id="Package\Sequence Container\Populate dds_customer_type\set active as 1 (new rows)"
-          TopLeft="168,235" />
-        <NodeLayout
           Size="291,42"
           Id="Package\Sequence Container\Populate dds_customer_type\lookup customer_type in dim_customer_type"
           TopLeft="125.833333333333,110" />
         <NodeLayout
+          Size="203,42"
+          Id="Package\Sequence Container\Populate dds_customer_type\Insert dim_customer_type"
+          TopLeft="171.333333333333,331.166666666667" />
+        <NodeLayout
           Size="171,42"
           Id="Package\Sequence Container\Populate dds_customer_type\customer_type_nds"
           TopLeft="190.5,15.5" />
+        <NodeLayout
+          Size="203,42"
+          Id="Package\Sequence Container\Populate dds_customer_type\set active as 1 (new rows)"
+          TopLeft="168,235" />
         <EdgeLayout
           Id="Package\Sequence Container\Populate dds_customer_type.Paths[OLE DB Source Output]"
           TopLeft="273.666666666667,57.5">
@@ -11203,28 +11256,6 @@ where [refTable].[productid_sk] = ?</property>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,45" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\Populate dds_customer_type.Paths[Derived Column Output]"
-          TopLeft="271.166666666667,277">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,54.1666666666667"
-              Start="0,0"
-              End="0,46.6666666666667">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,46.6666666666667" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11257,22 +11288,31 @@ where [refTable].[productid_sk] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Populate dds_customer_type.Paths[Derived Column Output]"
+          TopLeft="271.166666666667,277">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54.1666666666667"
+              Start="0,0"
+              End="0,46.6666666666667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.6666666666667" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Populate dds_customer_type\Insert dim_customer_type">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Sequence Container\Populate dds_customer_type\lookup customer_type in dim_customer_type">
     <Properties>
@@ -11293,6 +11333,19 @@ where [refTable].[productid_sk] = ?</property>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Populate dds_customer_type\Insert dim_customer_type">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -11454,21 +11507,21 @@ where [refTable].[productid_sk] = ?</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="166,42"
-          Id="Package\Sequence Container\Populate dds_gender\Insert dim_gender"
-          TopLeft="217.666666666666,312.166666666667" />
-        <NodeLayout
-          Size="203,42"
-          Id="Package\Sequence Container\Populate dds_gender\set active as 1 (new rows)"
-          TopLeft="197.333333333333,219.166666666667" />
-        <NodeLayout
           Size="217,42"
           Id="Package\Sequence Container\Populate dds_gender\lookup gender in dim_gender"
           TopLeft="192.909090909091,108.000000000001" />
         <NodeLayout
+          Size="166,42"
+          Id="Package\Sequence Container\Populate dds_gender\Insert dim_gender"
+          TopLeft="217.666666666666,312.166666666667" />
+        <NodeLayout
           Size="134,42"
           Id="Package\Sequence Container\Populate dds_gender\gender_nds"
           TopLeft="237.333333333333,17.5" />
+        <NodeLayout
+          Size="203,42"
+          Id="Package\Sequence Container\Populate dds_gender\set active as 1 (new rows)"
+          TopLeft="197.333333333333,219.166666666667" />
         <EdgeLayout
           Id="Package\Sequence Container\Populate dds_gender.Paths[OLE DB Source Output]"
           TopLeft="302.871212121212,59.5">
@@ -11483,28 +11536,6 @@ where [refTable].[productid_sk] = ?</property>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,41.000000000001" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\Populate dds_gender.Paths[Derived Column Output]"
-          TopLeft="299.75,261.166666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,51"
-              Start="0,0"
-              End="0,43.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,43.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11537,22 +11568,31 @@ where [refTable].[productid_sk] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Populate dds_gender.Paths[Derived Column Output]"
+          TopLeft="299.75,261.166666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,51"
+              Start="0,0"
+              End="0,43.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Populate dds_gender\Insert dim_gender">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Sequence Container\Populate dds_gender\lookup gender in dim_gender">
     <Properties>
@@ -11577,6 +11617,19 @@ where [refTable].[productid_sk] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Populate dds_gender\Insert dim_gender">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Sequence Container\Populate dds_gender\gender_nds">
     <Properties>
       <Property>
@@ -11594,20 +11647,20 @@ where [refTable].[productid_sk] = ?</property>
           Id="Package\Sequence Container\Populate dds_payment_type\payment_type_nds"
           TopLeft="216.333333333333,15.5" />
         <NodeLayout
-          Size="291,42"
-          Id="Package\Sequence Container\Populate dds_payment_type\lookup customer_type in dim_customer_type"
+          Size="286,42"
+          Id="Package\Sequence Container\Populate dds_payment_type\lookup payment_type in dim_payment_type"
           TopLeft="158.333333333333,118.5" />
+        <NodeLayout
+          Size="200,42"
+          Id="Package\Sequence Container\Populate dds_payment_type\Insert dim_payment_type"
+          TopLeft="206.5,332.833333333334" />
         <NodeLayout
           Size="203,42"
           Id="Package\Sequence Container\Populate dds_payment_type\set active as 1 (new rows)"
-          TopLeft="208.666666666667,239.166666666667" />
-        <NodeLayout
-          Size="203,42"
-          Id="Package\Sequence Container\Populate dds_payment_type\Insert dim_customer_type"
-          TopLeft="206.5,332.833333333334" />
+          TopLeft="203.666666666667,224.166666666667" />
         <EdgeLayout
           Id="Package\Sequence Container\Populate dds_payment_type.Paths[OLE DB Source Output]"
-          TopLeft="302.333333333333,57.5">
+          TopLeft="301.083333333333,57.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -11628,49 +11681,49 @@ where [refTable].[productid_sk] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Sequence Container\Populate dds_payment_type.Paths[Derived Column Output]"
-          TopLeft="309.083333333333,281.166666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,51.666666666667"
-              Start="0,0"
-              End="0,44.166666666667">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,44.166666666667" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Sequence Container\Populate dds_payment_type.Paths[Lookup No Match Output]"
-          TopLeft="307,160.5">
+          TopLeft="303.25,160.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,78.666666666667"
+              EndConnector="0,63.666666666667"
               Start="0,0"
-              End="0,71.166666666667">
+              End="0,56.166666666667">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,71.166666666667" />
+                    End="0,56.166666666667" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-55.80638671875,29.7786458333335,111.6127734375,11.609375"
+              BoundingBox="-55.80638671875,22.2786458333335,111.6127734375,11.609375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Populate dds_payment_type.Paths[Derived Column Output]"
+          TopLeft="305.833333333333,266.166666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,66.666666666667"
+              Start="0,0"
+              End="0,59.166666666667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,59.166666666667" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -11685,7 +11738,7 @@ where [refTable].[productid_sk] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Populate dds_payment_type\lookup customer_type in dim_customer_type">
+    design-time-name="Package\Sequence Container\Populate dds_payment_type\lookup payment_type in dim_payment_type">
     <Properties>
       <Property>
         <Name>UsedTableName</Name>
@@ -11708,7 +11761,7 @@ where [refTable].[productid_sk] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Populate dds_payment_type\Insert dim_customer_type">
+    design-time-name="Package\Sequence Container\Populate dds_payment_type\Insert dim_payment_type">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11728,19 +11781,19 @@ where [refTable].[productid_sk] = ?</property>
         <NodeLayout
           Size="273,42"
           Id="Package\Sequence Container\Populate dds_product\Lookup productline_id in dim_productline"
-          TopLeft="398.5,107.5" />
+          TopLeft="401.5,117.5" />
         <NodeLayout
-          Size="121,42"
+          Size="121,44"
           Id="Package\Sequence Container\Populate dds_product\Union All"
-          TopLeft="474.5,515.5" />
+          TopLeft="462.277777777778,477.722222222222" />
         <NodeLayout
           Size="197,42"
           Id="Package\Sequence Container\Populate dds_product\update active in old rows"
-          TopLeft="308,413.5" />
+          TopLeft="312.444444444444,371.277777777778" />
         <NodeLayout
           Size="178,42"
           Id="Package\Sequence Container\Populate dds_product\set active as 1 (new)"
-          TopLeft="453.5,617.5" />
+          TopLeft="439.055555555556,554.166666666667" />
         <NodeLayout
           Size="209,42"
           Id="Package\Sequence Container\Populate dds_product\Slowly Changing Dimension"
@@ -11752,29 +11805,29 @@ where [refTable].[productid_sk] = ?</property>
         <NodeLayout
           Size="163,42"
           Id="Package\Sequence Container\Populate dds_product\Insert Destination"
-          TopLeft="453.5,719.5" />
+          TopLeft="442.388888888889,616.166666666667" />
         <NodeLayout
-          Size="137,42"
+          Size="137,62"
           Id="Package\Sequence Container\Populate dds_product\product_nds"
-          TopLeft="466.5,5.5" />
+          TopLeft="462.5,15.5" />
         <NodeLayout
           Size="151,42"
           Id="Package\Sequence Container\Populate dds_product\update product"
           TopLeft="596.5,311.5" />
         <EdgeLayout
           Id="Package\Sequence Container\Populate dds_product.Paths[Union All Output 1]"
-          TopLeft="538.75,557.5">
+          TopLeft="525.416666666667,521.722222222222">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="0,32.4444444444445"
               Start="0,0"
-              End="0,52.5">
+              End="0,24.9444444444445">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,24.9444444444445" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11785,18 +11838,18 @@ where [refTable].[productid_sk] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\Populate dds_product.Paths[OLE DB Source Output]"
-          TopLeft="535,47.5">
+          TopLeft="534.5,77.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="0,40"
               Start="0,0"
-              End="0,52.5">
+              End="0,32.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,32.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11807,30 +11860,30 @@ where [refTable].[productid_sk] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\Populate dds_product.Paths[OLE DB Command Output]"
-          TopLeft="406.5,455.5">
+          TopLeft="410.944444444444,413.277777777778">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="109.666666666667,60"
+              EndConnector="92.9999999999999,64.4444444444443"
               Start="0,0"
-              End="109.666666666667,52.5">
+              End="92.9999999999999,56.9444444444443">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31.5301794453507" />
+                    End="0,34.1620445894507" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,31.5301794453507"
-                    Point2="0,35.5301794453507"
-                    Point3="4,35.5301794453507" />
+                    Point1="0,34.1620445894507"
+                    Point2="0,38.1620445894507"
+                    Point3="4,38.1620445894507" />
                   <mssgle:LineSegment
-                    End="105.666666666667,35.5301794453507" />
+                    End="88.9999999999999,38.1620445894507" />
                   <mssgle:CubicBezierSegment
-                    Point1="105.666666666667,35.5301794453507"
-                    Point2="109.666666666667,35.5301794453507"
-                    Point3="109.666666666667,39.5301794453507" />
+                    Point1="88.9999999999999,38.1620445894507"
+                    Point2="92.9999999999999,38.1620445894507"
+                    Point3="92.9999999999999,42.1620445894507" />
                   <mssgle:LineSegment
-                    End="109.666666666667,52.5" />
+                    End="92.9999999999999,56.9444444444443" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11841,61 +11894,49 @@ where [refTable].[productid_sk] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\Populate dds_product.Paths[New Output]"
-          TopLeft="535,251.5">
+          TopLeft="538.305555555556,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="18.8333333333334,264"
+              EndConnector="0,226.222222222222"
               Start="0,0"
-              End="18.8333333333334,256.5">
+              End="0,218.722222222222">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,152.332789559543" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,152.332789559543"
-                    Point2="0,156.332789559543"
-                    Point3="4,156.332789559543" />
-                  <mssgle:LineSegment
-                    End="14.8333333333334,156.332789559543" />
-                  <mssgle:CubicBezierSegment
-                    Point1="14.8333333333334,156.332789559543"
-                    Point2="18.8333333333334,156.332789559543"
-                    Point3="18.8333333333334,160.332789559543" />
-                  <mssgle:LineSegment
-                    End="18.8333333333334,256.5" />
+                    End="0,218.722222222222" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-17.6747200520833,161.332789559543,54.1827734375,11.43359375"
+              BoundingBox="-27.09138671875,103.644314236111,54.1827734375,11.43359375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\Populate dds_product.Paths[Lookup Match Output]"
-          TopLeft="535,149.5">
+          TopLeft="536.5,159.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="0,50"
               Start="0,0"
-              End="0,52.5">
+              End="0,42.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,42.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,15.4453125,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -11973,18 +12014,30 @@ where [refTable].[productid_sk] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\Populate dds_product.Paths[Derived Column Output1]"
-          TopLeft="538.75,659.5">
+          TopLeft="617.055555555556,575.166666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="-11.6666666666666,62"
               Start="0,0"
-              End="0,52.5">
+              End="-4.16666666666663,62">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="18.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.5,0"
+                    Point2="22.5,0"
+                    Point3="22.5,4" />
+                  <mssgle:LineSegment
+                    End="22.5,58" />
+                  <mssgle:CubicBezierSegment
+                    Point1="22.5,58"
+                    Point2="22.5,62"
+                    Point3="18.5,62" />
+                  <mssgle:LineSegment
+                    End="-4.16666666666663,62" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11995,18 +12048,30 @@ where [refTable].[productid_sk] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\Populate dds_product.Paths[Derived Column Output]"
-          TopLeft="406.25,353.5">
+          TopLeft="320,332.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="-7.55555555555554,59.7777777777778"
               Start="0,0"
-              End="0,52.5">
+              End="-15.0555555555555,59.7777777777778">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="-26.0555555555555,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-26.0555555555555,0"
+                    Point2="-30.0555555555555,0"
+                    Point3="-30.0555555555555,4" />
+                  <mssgle:LineSegment
+                    End="-30.0555555555555,55.7777777777778" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-30.0555555555555,55.7777777777778"
+                    Point2="-30.0555555555555,59.7777777777778"
+                    Point3="-26.0555555555555,59.7777777777778" />
+                  <mssgle:LineSegment
+                    End="-15.0555555555555,59.7777777777778" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12177,9 +12242,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12201,9 +12264,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12225,9 +12286,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12249,9 +12308,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12285,9 +12342,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12551,9 +12606,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12575,9 +12628,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12611,9 +12662,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12851,9 +12900,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12875,9 +12922,7 @@ where [refTable].[productid_sk] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

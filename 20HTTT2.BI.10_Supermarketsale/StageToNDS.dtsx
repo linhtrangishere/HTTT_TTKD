@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="111"
-  DTS:VersionGUID="{5A0B5224-0C16-4AF2-9C0A-B8527BC6000C}">
+  DTS:VersionBuild="122"
+  DTS:VersionGUID="{171446C6-CC18-4854-822C-A610325432B2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -722,7 +722,7 @@ where [refTable].[City] = ? and [refTable].[Branch_NK] = ?</property>
                 <property
                   dataType="System.String"
                   description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Branch_SK" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Branch_NK" dataType="DT_STR" length="1" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="City" dataType="DT_STR" length="10" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="CreatedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Active" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Branch_SK" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Branch_NK" dataType="DT_STR" length="1" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="City" dataType="DT_STR" length="10" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="CreatedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UpdatedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Active" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
                 <property
                   containsID="true"
                   dataType="System.String"
@@ -4560,6 +4560,13 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
                   <externalMetadataColumns />
                 </input>
                 <input
+                  refId="Package\Productline stage -&gt; NDS\Union All.Inputs[Union All Input 3]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Union All Input 3">
+                  <externalMetadataColumns />
+                </input>
+                <input
                   refId="Package\Productline stage -&gt; NDS\Union All.Inputs[Union All Input 2]"
                   hasSideEffects="true"
                   name="Union All Input 2">
@@ -4608,13 +4615,6 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
                       </properties>
                     </inputColumn>
                   </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-                <input
-                  refId="Package\Productline stage -&gt; NDS\Union All.Inputs[Union All Input 3]"
-                  dangling="true"
-                  hasSideEffects="true"
-                  name="Union All Input 3">
                   <externalMetadataColumns />
                 </input>
               </inputs>
@@ -5336,7 +5336,7 @@ where [refTable].[branch_nk] = ?</property>
                 <output
                   refId="Package\Sale stage -&gt; NDS\Lookup branch in nds.Outputs[Lookup Match Output]"
                   errorOrTruncationOperation="Lookup"
-                  errorRowDisposition="RedirectRow"
+                  errorRowDisposition="FailComponent"
                   exclusionGroup="1"
                   name="Lookup Match Output"
                   synchronousInputId="Package\Sale stage -&gt; NDS\Lookup branch in nds.Inputs[Lookup Input]">
@@ -5496,7 +5496,7 @@ where [refTable].[customertype] = ?</property>
                 <output
                   refId="Package\Sale stage -&gt; NDS\Lookup customer type in nds.Outputs[Lookup Match Output]"
                   errorOrTruncationOperation="Lookup"
-                  errorRowDisposition="RedirectRow"
+                  errorRowDisposition="FailComponent"
                   exclusionGroup="1"
                   name="Lookup Match Output"
                   synchronousInputId="Package\Sale stage -&gt; NDS\Lookup customer type in nds.Inputs[Lookup Input]">
@@ -5656,7 +5656,7 @@ where [refTable].[gender] = ?</property>
                 <output
                   refId="Package\Sale stage -&gt; NDS\Lookup gender in nds.Outputs[Lookup Match Output]"
                   errorOrTruncationOperation="Lookup"
-                  errorRowDisposition="RedirectRow"
+                  errorRowDisposition="FailComponent"
                   exclusionGroup="1"
                   name="Lookup Match Output"
                   synchronousInputId="Package\Sale stage -&gt; NDS\Lookup gender in nds.Inputs[Lookup Input]">
@@ -5816,7 +5816,7 @@ where [refTable].[paymenttype] = ?</property>
                 <output
                   refId="Package\Sale stage -&gt; NDS\Lookup paymenttype in nds.Outputs[Lookup Match Output]"
                   errorOrTruncationOperation="Lookup"
-                  errorRowDisposition="RedirectRow"
+                  errorRowDisposition="FailComponent"
                   exclusionGroup="1"
                   name="Lookup Match Output"
                   synchronousInputId="Package\Sale stage -&gt; NDS\Lookup paymenttype in nds.Inputs[Lookup Input]">
@@ -5976,7 +5976,7 @@ where [refTable].[productid_nk] = ?</property>
                 <output
                   refId="Package\Sale stage -&gt; NDS\Lookup productID in nds.Outputs[Lookup Match Output]"
                   errorOrTruncationOperation="Lookup"
-                  errorRowDisposition="RedirectRow"
+                  errorRowDisposition="FailComponent"
                   exclusionGroup="1"
                   name="Lookup Match Output"
                   synchronousInputId="Package\Sale stage -&gt; NDS\Lookup productID in nds.Inputs[Lookup Input]">
@@ -6428,1409 +6428,6 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
                 </output>
               </outputs>
             </component>
-            <component
-              refId="Package\Sale stage -&gt; NDS\Union All"
-              componentClassID="Microsoft.UnionAll"
-              contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
-              name="Union All"
-              version="1">
-              <inputs>
-                <input
-                  refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 1]"
-                  name="Union All Input 1">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 1].Columns[ProductID]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="20"
-                      cachedName="ProductID"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[ProductID]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[ProductID]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 1].Columns[InvoiceID]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="20"
-                      cachedName="InvoiceID"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[InvoiceID]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[InvoiceID]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 1].Columns[Branch]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="1"
-                      cachedName="Branch"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Branch]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Branch]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 1].Columns[CustomerType]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="CustomerType"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[CustomerType]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[CustomerType]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 1].Columns[Gender]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="Gender"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Gender]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Gender]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 1].Columns[Quantity]"
-                      cachedDataType="i4"
-                      cachedName="Quantity"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Quantity]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Quantity]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 1].Columns[Tax5Percentage]"
-                      cachedDataType="r8"
-                      cachedName="Tax5Percentage"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Tax5Percentage]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Tax5Percentage]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 1].Columns[Total]"
-                      cachedDataType="r8"
-                      cachedName="Total"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Total]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Total]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 1].Columns[Date]"
-                      cachedDataType="dbDate"
-                      cachedName="Date"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Date]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Date]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 1].Columns[Time]"
-                      cachedDataType="dbTime2"
-                      cachedName="Time"
-                      cachedScale="7"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Time]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Time]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 1].Columns[Payment]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="20"
-                      cachedName="Payment"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Payment]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Payment]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 1].Columns[Cogs]"
-                      cachedDataType="r8"
-                      cachedName="Cogs"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Cogs]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Cogs]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 1].Columns[GrossMarginPercentage]"
-                      cachedDataType="r8"
-                      cachedName="GrossMarginPercentage"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[GrossMarginPercentage]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[GrossMarginPercentage]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 1].Columns[GrossIncome]"
-                      cachedDataType="r8"
-                      cachedName="GrossIncome"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[GrossIncome]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[GrossIncome]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 1].Columns[Rating]"
-                      cachedDataType="r8"
-                      cachedName="Rating"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Rating]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Rating]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 1].Columns[Active]"
-                      cachedDataType="i4"
-                      cachedName="Active"
-                      lineageId="Package\Sale stage -&gt; NDS\Derived Column active.Outputs[Derived Column Output].Columns[Active]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Active]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 1].Columns[ErrorCode]"
-                      cachedDataType="i4"
-                      cachedName="ErrorCode"
-                      lineageId="Package\Sale stage -&gt; NDS\Lookup branch in nds.Outputs[Lookup Error Output].Columns[ErrorCode]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[ErrorCode]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 1].Columns[ErrorColumn]"
-                      cachedDataType="i4"
-                      cachedName="ErrorColumn"
-                      lineageId="Package\Sale stage -&gt; NDS\Lookup branch in nds.Outputs[Lookup Error Output].Columns[ErrorColumn]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[ErrorColumn]}</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-                <input
-                  refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 2]"
-                  hasSideEffects="true"
-                  name="Union All Input 2">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 2].Columns[ProductID]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="20"
-                      cachedName="ProductID"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[ProductID]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[ProductID]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 2].Columns[InvoiceID]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="20"
-                      cachedName="InvoiceID"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[InvoiceID]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[InvoiceID]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 2].Columns[Branch]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="1"
-                      cachedName="Branch"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Branch]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Branch]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 2].Columns[CustomerType]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="CustomerType"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[CustomerType]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[CustomerType]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 2].Columns[Gender]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="Gender"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Gender]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Gender]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 2].Columns[Quantity]"
-                      cachedDataType="i4"
-                      cachedName="Quantity"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Quantity]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Quantity]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 2].Columns[Tax5Percentage]"
-                      cachedDataType="r8"
-                      cachedName="Tax5Percentage"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Tax5Percentage]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Tax5Percentage]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 2].Columns[Total]"
-                      cachedDataType="r8"
-                      cachedName="Total"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Total]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Total]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 2].Columns[Date]"
-                      cachedDataType="dbDate"
-                      cachedName="Date"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Date]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Date]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 2].Columns[Time]"
-                      cachedDataType="dbTime2"
-                      cachedName="Time"
-                      cachedScale="7"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Time]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Time]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 2].Columns[Payment]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="20"
-                      cachedName="Payment"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Payment]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Payment]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 2].Columns[Cogs]"
-                      cachedDataType="r8"
-                      cachedName="Cogs"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Cogs]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Cogs]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 2].Columns[GrossMarginPercentage]"
-                      cachedDataType="r8"
-                      cachedName="GrossMarginPercentage"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[GrossMarginPercentage]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[GrossMarginPercentage]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 2].Columns[GrossIncome]"
-                      cachedDataType="r8"
-                      cachedName="GrossIncome"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[GrossIncome]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[GrossIncome]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 2].Columns[Rating]"
-                      cachedDataType="r8"
-                      cachedName="Rating"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Rating]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Rating]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 2].Columns[Active]"
-                      cachedDataType="i4"
-                      cachedName="Active"
-                      lineageId="Package\Sale stage -&gt; NDS\Derived Column active.Outputs[Derived Column Output].Columns[Active]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Active]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 2].Columns[ErrorCode]"
-                      cachedDataType="i4"
-                      cachedName="ErrorCode"
-                      lineageId="Package\Sale stage -&gt; NDS\Lookup productID in nds.Outputs[Lookup Error Output].Columns[ErrorCode]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[ErrorCode]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 2].Columns[ErrorColumn]"
-                      cachedDataType="i4"
-                      cachedName="ErrorColumn"
-                      lineageId="Package\Sale stage -&gt; NDS\Lookup productID in nds.Outputs[Lookup Error Output].Columns[ErrorColumn]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[ErrorColumn]}</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-                <input
-                  refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 3]"
-                  hasSideEffects="true"
-                  name="Union All Input 3">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 3].Columns[ProductID]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="20"
-                      cachedName="ProductID"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[ProductID]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[ProductID]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 3].Columns[InvoiceID]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="20"
-                      cachedName="InvoiceID"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[InvoiceID]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[InvoiceID]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 3].Columns[Branch]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="1"
-                      cachedName="Branch"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Branch]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Branch]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 3].Columns[CustomerType]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="CustomerType"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[CustomerType]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[CustomerType]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 3].Columns[Gender]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="Gender"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Gender]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Gender]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 3].Columns[Quantity]"
-                      cachedDataType="i4"
-                      cachedName="Quantity"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Quantity]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Quantity]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 3].Columns[Tax5Percentage]"
-                      cachedDataType="r8"
-                      cachedName="Tax5Percentage"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Tax5Percentage]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Tax5Percentage]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 3].Columns[Total]"
-                      cachedDataType="r8"
-                      cachedName="Total"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Total]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Total]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 3].Columns[Date]"
-                      cachedDataType="dbDate"
-                      cachedName="Date"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Date]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Date]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 3].Columns[Time]"
-                      cachedDataType="dbTime2"
-                      cachedName="Time"
-                      cachedScale="7"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Time]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Time]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 3].Columns[Payment]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="20"
-                      cachedName="Payment"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Payment]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Payment]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 3].Columns[Cogs]"
-                      cachedDataType="r8"
-                      cachedName="Cogs"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Cogs]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Cogs]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 3].Columns[GrossMarginPercentage]"
-                      cachedDataType="r8"
-                      cachedName="GrossMarginPercentage"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[GrossMarginPercentage]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[GrossMarginPercentage]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 3].Columns[GrossIncome]"
-                      cachedDataType="r8"
-                      cachedName="GrossIncome"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[GrossIncome]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[GrossIncome]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 3].Columns[Rating]"
-                      cachedDataType="r8"
-                      cachedName="Rating"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Rating]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Rating]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 3].Columns[Active]"
-                      cachedDataType="i4"
-                      cachedName="Active"
-                      lineageId="Package\Sale stage -&gt; NDS\Derived Column active.Outputs[Derived Column Output].Columns[Active]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Active]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 3].Columns[ErrorCode]"
-                      cachedDataType="i4"
-                      cachedName="ErrorCode"
-                      lineageId="Package\Sale stage -&gt; NDS\Lookup customer type in nds.Outputs[Lookup Error Output].Columns[ErrorCode]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[ErrorCode]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 3].Columns[ErrorColumn]"
-                      cachedDataType="i4"
-                      cachedName="ErrorColumn"
-                      lineageId="Package\Sale stage -&gt; NDS\Lookup customer type in nds.Outputs[Lookup Error Output].Columns[ErrorColumn]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[ErrorColumn]}</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-                <input
-                  refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 4]"
-                  hasSideEffects="true"
-                  name="Union All Input 4">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 4].Columns[ProductID]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="20"
-                      cachedName="ProductID"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[ProductID]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[ProductID]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 4].Columns[InvoiceID]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="20"
-                      cachedName="InvoiceID"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[InvoiceID]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[InvoiceID]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 4].Columns[Branch]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="1"
-                      cachedName="Branch"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Branch]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Branch]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 4].Columns[CustomerType]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="CustomerType"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[CustomerType]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[CustomerType]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 4].Columns[Gender]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="Gender"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Gender]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Gender]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 4].Columns[Quantity]"
-                      cachedDataType="i4"
-                      cachedName="Quantity"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Quantity]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Quantity]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 4].Columns[Tax5Percentage]"
-                      cachedDataType="r8"
-                      cachedName="Tax5Percentage"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Tax5Percentage]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Tax5Percentage]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 4].Columns[Total]"
-                      cachedDataType="r8"
-                      cachedName="Total"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Total]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Total]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 4].Columns[Date]"
-                      cachedDataType="dbDate"
-                      cachedName="Date"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Date]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Date]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 4].Columns[Time]"
-                      cachedDataType="dbTime2"
-                      cachedName="Time"
-                      cachedScale="7"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Time]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Time]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 4].Columns[Payment]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="20"
-                      cachedName="Payment"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Payment]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Payment]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 4].Columns[Cogs]"
-                      cachedDataType="r8"
-                      cachedName="Cogs"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Cogs]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Cogs]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 4].Columns[GrossMarginPercentage]"
-                      cachedDataType="r8"
-                      cachedName="GrossMarginPercentage"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[GrossMarginPercentage]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[GrossMarginPercentage]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 4].Columns[GrossIncome]"
-                      cachedDataType="r8"
-                      cachedName="GrossIncome"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[GrossIncome]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[GrossIncome]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 4].Columns[Rating]"
-                      cachedDataType="r8"
-                      cachedName="Rating"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Rating]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Rating]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 4].Columns[Active]"
-                      cachedDataType="i4"
-                      cachedName="Active"
-                      lineageId="Package\Sale stage -&gt; NDS\Derived Column active.Outputs[Derived Column Output].Columns[Active]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Active]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 4].Columns[ErrorCode]"
-                      cachedDataType="i4"
-                      cachedName="ErrorCode"
-                      lineageId="Package\Sale stage -&gt; NDS\Lookup gender in nds.Outputs[Lookup Error Output].Columns[ErrorCode]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[ErrorCode]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 4].Columns[ErrorColumn]"
-                      cachedDataType="i4"
-                      cachedName="ErrorColumn"
-                      lineageId="Package\Sale stage -&gt; NDS\Lookup gender in nds.Outputs[Lookup Error Output].Columns[ErrorColumn]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[ErrorColumn]}</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-                <input
-                  refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 5]"
-                  hasSideEffects="true"
-                  name="Union All Input 5">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 5].Columns[ProductID]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="20"
-                      cachedName="ProductID"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[ProductID]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[ProductID]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 5].Columns[InvoiceID]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="20"
-                      cachedName="InvoiceID"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[InvoiceID]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[InvoiceID]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 5].Columns[Branch]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="1"
-                      cachedName="Branch"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Branch]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Branch]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 5].Columns[CustomerType]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="CustomerType"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[CustomerType]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[CustomerType]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 5].Columns[Gender]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="Gender"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Gender]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Gender]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 5].Columns[Quantity]"
-                      cachedDataType="i4"
-                      cachedName="Quantity"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Quantity]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Quantity]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 5].Columns[Tax5Percentage]"
-                      cachedDataType="r8"
-                      cachedName="Tax5Percentage"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Tax5Percentage]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Tax5Percentage]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 5].Columns[Total]"
-                      cachedDataType="r8"
-                      cachedName="Total"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Total]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Total]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 5].Columns[Date]"
-                      cachedDataType="dbDate"
-                      cachedName="Date"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Date]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Date]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 5].Columns[Time]"
-                      cachedDataType="dbTime2"
-                      cachedName="Time"
-                      cachedScale="7"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Time]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Time]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 5].Columns[Payment]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="20"
-                      cachedName="Payment"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Payment]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Payment]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 5].Columns[Cogs]"
-                      cachedDataType="r8"
-                      cachedName="Cogs"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Cogs]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Cogs]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 5].Columns[GrossMarginPercentage]"
-                      cachedDataType="r8"
-                      cachedName="GrossMarginPercentage"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[GrossMarginPercentage]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[GrossMarginPercentage]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 5].Columns[GrossIncome]"
-                      cachedDataType="r8"
-                      cachedName="GrossIncome"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[GrossIncome]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[GrossIncome]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 5].Columns[Rating]"
-                      cachedDataType="r8"
-                      cachedName="Rating"
-                      lineageId="Package\Sale stage -&gt; NDS\sale_stage.Outputs[OLE DB Source Output].Columns[Rating]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Rating]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 5].Columns[Active]"
-                      cachedDataType="i4"
-                      cachedName="Active"
-                      lineageId="Package\Sale stage -&gt; NDS\Derived Column active.Outputs[Derived Column Output].Columns[Active]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Active]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 5].Columns[ErrorCode]"
-                      cachedDataType="i4"
-                      cachedName="ErrorCode"
-                      lineageId="Package\Sale stage -&gt; NDS\Lookup paymenttype in nds.Outputs[Lookup Error Output].Columns[ErrorCode]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[ErrorCode]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 5].Columns[ErrorColumn]"
-                      cachedDataType="i4"
-                      cachedName="ErrorColumn"
-                      lineageId="Package\Sale stage -&gt; NDS\Lookup paymenttype in nds.Outputs[Lookup Error Output].Columns[ErrorColumn]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[ErrorColumn]}</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-                <input
-                  refId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 6]"
-                  dangling="true"
-                  hasSideEffects="true"
-                  name="Union All Input 6">
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1]"
-                  name="Union All Output 1">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[ProductID]"
-                      codePage="1252"
-                      dataType="str"
-                      length="20"
-                      lineageId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[ProductID]"
-                      name="ProductID" />
-                    <outputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[InvoiceID]"
-                      codePage="1252"
-                      dataType="str"
-                      length="20"
-                      lineageId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[InvoiceID]"
-                      name="InvoiceID" />
-                    <outputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Branch]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      lineageId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Branch]"
-                      name="Branch" />
-                    <outputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[CustomerType]"
-                      codePage="1252"
-                      dataType="str"
-                      length="10"
-                      lineageId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[CustomerType]"
-                      name="CustomerType" />
-                    <outputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Gender]"
-                      codePage="1252"
-                      dataType="str"
-                      length="10"
-                      lineageId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Gender]"
-                      name="Gender" />
-                    <outputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Quantity]"
-                      dataType="i4"
-                      lineageId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Quantity]"
-                      name="Quantity" />
-                    <outputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Tax5Percentage]"
-                      dataType="r8"
-                      lineageId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Tax5Percentage]"
-                      name="Tax5Percentage" />
-                    <outputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Total]"
-                      dataType="r8"
-                      lineageId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Total]"
-                      name="Total" />
-                    <outputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Date]"
-                      dataType="dbDate"
-                      lineageId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Date]"
-                      name="Date" />
-                    <outputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Time]"
-                      dataType="dbTime2"
-                      lineageId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Time]"
-                      name="Time"
-                      scale="7" />
-                    <outputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Payment]"
-                      codePage="1252"
-                      dataType="str"
-                      length="20"
-                      lineageId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Payment]"
-                      name="Payment" />
-                    <outputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Cogs]"
-                      dataType="r8"
-                      lineageId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Cogs]"
-                      name="Cogs" />
-                    <outputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[GrossMarginPercentage]"
-                      dataType="r8"
-                      lineageId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[GrossMarginPercentage]"
-                      name="GrossMarginPercentage" />
-                    <outputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[GrossIncome]"
-                      dataType="r8"
-                      lineageId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[GrossIncome]"
-                      name="GrossIncome" />
-                    <outputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Rating]"
-                      dataType="r8"
-                      lineageId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Rating]"
-                      name="Rating" />
-                    <outputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Active]"
-                      dataType="i4"
-                      lineageId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[Active]"
-                      name="Active" />
-                    <outputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[ErrorCode]"
-                      name="ErrorCode" />
-                    <outputColumn
-                      refId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Sale stage -&gt; NDS\Union All.Outputs[Union All Output 1].Columns[ErrorColumn]"
-                      name="ErrorColumn" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
           </components>
           <paths>
             <path
@@ -7838,31 +6435,6 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
               endId="Package\Sale stage -&gt; NDS\Lookup branch in nds.Inputs[Lookup Input]"
               name="Derived Column Output"
               startId="Package\Sale stage -&gt; NDS\Derived Column active.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\Sale stage -&gt; NDS.Paths[Lookup Error Output]"
-              endId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 1]"
-              name="Lookup Error Output"
-              startId="Package\Sale stage -&gt; NDS\Lookup branch in nds.Outputs[Lookup Error Output]" />
-            <path
-              refId="Package\Sale stage -&gt; NDS.Paths[Lookup Error Output1]"
-              endId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 2]"
-              name="Lookup Error Output"
-              startId="Package\Sale stage -&gt; NDS\Lookup productID in nds.Outputs[Lookup Error Output]" />
-            <path
-              refId="Package\Sale stage -&gt; NDS.Paths[Lookup Error Output2]"
-              endId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 3]"
-              name="Lookup Error Output"
-              startId="Package\Sale stage -&gt; NDS\Lookup customer type in nds.Outputs[Lookup Error Output]" />
-            <path
-              refId="Package\Sale stage -&gt; NDS.Paths[Lookup Error Output3]"
-              endId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 4]"
-              name="Lookup Error Output"
-              startId="Package\Sale stage -&gt; NDS\Lookup gender in nds.Outputs[Lookup Error Output]" />
-            <path
-              refId="Package\Sale stage -&gt; NDS.Paths[Lookup Error Output4]"
-              endId="Package\Sale stage -&gt; NDS\Union All.Inputs[Union All Input 5]"
-              name="Lookup Error Output"
-              startId="Package\Sale stage -&gt; NDS\Lookup paymenttype in nds.Outputs[Lookup Error Output]" />
             <path
               refId="Package\Sale stage -&gt; NDS.Paths[Lookup Match Output]"
               endId="Package\Sale stage -&gt; NDS\Lookup productID in nds.Inputs[Lookup Input]"
@@ -7999,14 +6571,14 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,71.8333333333334"
+              EndConnector="0,71.8333333333337"
               Start="0,0"
-              End="0,64.3333333333334">
+              End="0,64.3333333333337">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,64.3333333333334" />
+                    End="0,64.3333333333337" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8385,7 +6957,7 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q3:string">0</Value>
+          type="q3:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -8652,6 +7224,14 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Gennerate customer_type, gender, payment type in nds\get customer type from sales_stage">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Product stage -&gt; NDS">
     <LayoutInfo>
@@ -8662,25 +7242,55 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
           Id="Package\Product stage -&gt; NDS\Lookup productID in nds"
           TopLeft="594.5,332.5" />
         <NodeLayout
+          Size="173,42"
+          Id="Package\Product stage -&gt; NDS\update product_nds"
+          TopLeft="480.25,533.5" />
+        <NodeLayout
           Size="188,42"
           Id="Package\Product stage -&gt; NDS\insert into product_nds"
-          TopLeft="669.805555555556,674.583333333333" />
+          TopLeft="678.805555555556,654.583333333333" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Product stage -&gt; NDS\productline_stage"
+          TopLeft="615.75,7.25" />
+        <NodeLayout
+          Size="233,42"
+          Id="Package\Product stage -&gt; NDS\Lookup productID value in nds 1"
+          TopLeft="449.166666666667,455.833333333333" />
         <NodeLayout
           Size="212,42"
           Id="Package\Product stage -&gt; NDS\Lookup productlineID in nds"
           TopLeft="590,207.5" />
         <NodeLayout
-          Size="173,42"
-          Id="Package\Product stage -&gt; NDS\update product_nds"
-          TopLeft="480.25,533.5" />
-        <NodeLayout
           Size="185,42"
           Id="Package\Product stage -&gt; NDS\Derived Column active"
           TopLeft="606.75,106.25" />
         <NodeLayout
-          Size="163,42"
-          Id="Package\Product stage -&gt; NDS\productline_stage"
-          TopLeft="615.75,7.25" />
+          Size="121,42"
+          Id="Package\Product stage -&gt; NDS\Union All"
+          TopLeft="713.333333333333,580" />
+        <EdgeLayout
+          Id="Package\Product stage -&gt; NDS.Paths[Union All Output 1]"
+          TopLeft="773.319444444445,622">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,32.583333333333"
+              Start="0,0"
+              End="0,25.083333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.083333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Product stage -&gt; NDS.Paths[OLE DB Source Output]"
           TopLeft="698.25,49.25">
@@ -8701,6 +7311,136 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Product stage -&gt; NDS.Paths[OLE DB Command Output]"
+          TopLeft="653.25,554.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="60.0833333333335,46.4999999999998"
+              Start="0,0"
+              End="52.5833333333335,46.4999999999998">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="26.0416666666667,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="26.0416666666667,0"
+                    Point2="30.0416666666667,0"
+                    Point3="30.0416666666667,4" />
+                  <mssgle:LineSegment
+                    End="30.0416666666667,42.4999999999998" />
+                  <mssgle:CubicBezierSegment
+                    Point1="30.0416666666667,42.4999999999998"
+                    Point2="30.0416666666667,46.4999999999998"
+                    Point3="34.0416666666667,46.4999999999998" />
+                  <mssgle:LineSegment
+                    End="52.5833333333335,46.4999999999998" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Product stage -&gt; NDS.Paths[Lookup No Match Output1]"
+          TopLeft="723.166666666667,374.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="50.6666666666667,205.5"
+              Start="0,0"
+              End="50.6666666666667,198">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,79.2034587995931" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,79.2034587995931"
+                    Point2="0,83.2034587995931"
+                    Point3="4,83.2034587995931" />
+                  <mssgle:LineSegment
+                    End="46.6666666666667,83.2034587995931" />
+                  <mssgle:CubicBezierSegment
+                    Point1="46.6666666666667,83.2034587995931"
+                    Point2="50.6666666666667,83.2034587995931"
+                    Point3="50.6666666666667,87.2034587995931" />
+                  <mssgle:LineSegment
+                    End="50.6666666666667,198" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-30.4730533854166,88.2034587995931,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Product stage -&gt; NDS.Paths[Lookup No Match Output]"
+          TopLeft="566.208333333333,497.833333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,35.6666666666668"
+              Start="0,0"
+              End="0,28.1666666666668">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.1666666666668" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-55.80638671875,8.2786458333334,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Product stage -&gt; NDS.Paths[Lookup Match Output1]"
+          TopLeft="660.833333333333,374.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-95.1666666666669,81.3333333333334"
+              Start="0,0"
+              End="-95.1666666666669,73.8333333333334">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.9304849101391" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.9304849101391"
+                    Point2="0,32.9304849101391"
+                    Point3="-4,32.9304849101391" />
+                  <mssgle:LineSegment
+                    End="-91.1666666666669,32.9304849101391" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-91.1666666666669,32.9304849101391"
+                    Point2="-95.1666666666669,32.9304849101391"
+                    Point3="-95.1666666666669,36.9304849101391" />
+                  <mssgle:LineSegment
+                    End="-95.1666666666669,73.8333333333334" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-95.7747200520834,37.9304849101391,96.3827734375,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -8749,178 +7489,6 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="233,42"
-          Id="Package\Product stage -&gt; NDS\Lookup productID value in nds 1"
-          TopLeft="449.166666666667,455.833333333333" />
-        <EdgeLayout
-          Id="Package\Product stage -&gt; NDS.Paths[Lookup Match Output1]"
-          TopLeft="660.833333333333,374.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-95.1666666666669,81.3333333333334"
-              Start="0,0"
-              End="-95.1666666666669,73.8333333333334">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.9304849101391" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28.9304849101391"
-                    Point2="0,32.9304849101391"
-                    Point3="-4,32.9304849101391" />
-                  <mssgle:LineSegment
-                    End="-91.1666666666669,32.9304849101391" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-91.1666666666669,32.9304849101391"
-                    Point2="-95.1666666666669,32.9304849101391"
-                    Point3="-95.1666666666669,36.9304849101391" />
-                  <mssgle:LineSegment
-                    End="-95.1666666666669,73.8333333333334" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-95.7747200520834,37.9304849101391,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Product stage -&gt; NDS.Paths[Lookup No Match Output]"
-          TopLeft="566.208333333333,497.833333333333">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,35.6666666666668"
-              Start="0,0"
-              End="0,28.1666666666668">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.1666666666668" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-55.80638671875,8.2786458333334,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="121,42"
-          Id="Package\Product stage -&gt; NDS\Union All"
-          TopLeft="713.333333333333,580" />
-        <EdgeLayout
-          Id="Package\Product stage -&gt; NDS.Paths[Lookup No Match Output1]"
-          TopLeft="723.166666666667,374.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="50.6666666666667,205.5"
-              Start="0,0"
-              End="50.6666666666667,198">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,79.2034587995931" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,79.2034587995931"
-                    Point2="0,83.2034587995931"
-                    Point3="4,83.2034587995931" />
-                  <mssgle:LineSegment
-                    End="46.6666666666667,83.2034587995931" />
-                  <mssgle:CubicBezierSegment
-                    Point1="46.6666666666667,83.2034587995931"
-                    Point2="50.6666666666667,83.2034587995931"
-                    Point3="50.6666666666667,87.2034587995931" />
-                  <mssgle:LineSegment
-                    End="50.6666666666667,198" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-30.4730533854166,88.2034587995931,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Product stage -&gt; NDS.Paths[OLE DB Command Output]"
-          TopLeft="653.25,554.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="60.0833333333335,46.4999999999998"
-              Start="0,0"
-              End="52.5833333333335,46.4999999999998">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="26.0416666666667,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="26.0416666666667,0"
-                    Point2="30.0416666666667,0"
-                    Point3="30.0416666666667,4" />
-                  <mssgle:LineSegment
-                    End="30.0416666666667,42.4999999999998" />
-                  <mssgle:CubicBezierSegment
-                    Point1="30.0416666666667,42.4999999999998"
-                    Point2="30.0416666666667,46.4999999999998"
-                    Point3="34.0416666666667,46.4999999999998" />
-                  <mssgle:LineSegment
-                    End="52.5833333333335,46.4999999999998" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Product stage -&gt; NDS.Paths[Union All Output 1]"
-          TopLeft="773.833333333333,622">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-10.0277777777778,52.5833333333333"
-              Start="0,0"
-              End="-10.0277777777778,45.0833333333333">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.2916666666666" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22.2916666666666"
-                    Point2="0,26.2916666666666"
-                    Point3="-4,26.2916666666666" />
-                  <mssgle:LineSegment
-                    End="-6.02777777777783,26.2916666666666" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-6.02777777777783,26.2916666666666"
-                    Point2="-10.0277777777778,26.2916666666666"
-                    Point3="-10.0277777777778,30.2916666666666" />
-                  <mssgle:LineSegment
-                    End="-10.0277777777778,45.0833333333333" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -8931,6 +7499,42 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
         <Name>UsedTableName</Name>
         <Value
           type="q2:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q3:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q4:string">false</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Product stage -&gt; NDS\productline_stage">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Product stage -&gt; NDS\Lookup productID value in nds 1">
+    <Properties>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q2:string">[dbo].[product_nds]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
@@ -8966,20 +7570,7 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q4:string">false</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Product stage -&gt; NDS\productline_stage">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
+          type="q4:boolean">false</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -8989,47 +7580,33 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="212,42"
-          Id="Package\Productline stage -&gt; NDS\Lookup productlineID in nds"
-          TopLeft="590,311" />
-        <NodeLayout
-          Size="190,42"
-          Id="Package\Productline stage -&gt; NDS\update productline_nds"
-          TopLeft="457,522" />
+          Size="163,42"
+          Id="Package\Productline stage -&gt; NDS\productline_stage"
+          TopLeft="612,111" />
         <NodeLayout
           Size="204,42"
           Id="Package\Productline stage -&gt; NDS\insert into productline_nds"
           TopLeft="617,699" />
         <NodeLayout
-          Size="163,42"
-          Id="Package\Productline stage -&gt; NDS\productline_stage"
-          TopLeft="612,111" />
+          Size="190,42"
+          Id="Package\Productline stage -&gt; NDS\update productline_nds"
+          TopLeft="457,522" />
+        <NodeLayout
+          Size="240,42"
+          Id="Package\Productline stage -&gt; NDS\Lookup productlineID value in nds"
+          TopLeft="436,399" />
+        <NodeLayout
+          Size="212,42"
+          Id="Package\Productline stage -&gt; NDS\Lookup productlineID in nds"
+          TopLeft="590,311" />
         <NodeLayout
           Size="185,42"
           Id="Package\Productline stage -&gt; NDS\Derived Column active"
           TopLeft="603,210" />
-        <EdgeLayout
-          Id="Package\Productline stage -&gt; NDS.Paths[OLE DB Source Output]"
-          TopLeft="694.5,153">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,57"
-              Start="0,0"
-              End="0,49.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,49.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="121,42"
+          Id="Package\Productline stage -&gt; NDS\Union All"
+          TopLeft="654,590" />
         <EdgeLayout
           Id="Package\Productline stage -&gt; NDS.Paths[Derived Column Output]"
           TopLeft="695.75,252">
@@ -9052,96 +7629,48 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="240,42"
-          Id="Package\Productline stage -&gt; NDS\Lookup productlineID value in nds"
-          TopLeft="436,399" />
         <EdgeLayout
-          Id="Package\Productline stage -&gt; NDS.Paths[Lookup Match Output]"
-          TopLeft="662,353">
+          Id="Package\Productline stage -&gt; NDS.Paths[Union All Output 1]"
+          TopLeft="716.75,632">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-106,46"
+              EndConnector="0,67"
               Start="0,0"
-              End="-106,38.5">
+              End="0,59.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,14.6067415730337" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,14.6067415730337"
-                    Point2="0,18.6067415730337"
-                    Point3="-4,18.6067415730337" />
-                  <mssgle:LineSegment
-                    End="-102,18.6067415730337" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-102,18.6067415730337"
-                    Point2="-106,18.6067415730337"
-                    Point3="-106,22.6067415730337" />
-                  <mssgle:LineSegment
-                    End="-106,38.5" />
+                    End="0,59.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-101.19138671875,23.6067415730337,96.3827734375,11.609375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Productline stage -&gt; NDS.Paths[Lookup No Match Output]"
-          TopLeft="554,441">
+          Id="Package\Productline stage -&gt; NDS.Paths[OLE DB Source Output]"
+          TopLeft="694.5,153">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,81"
+              EndConnector="0,57"
               Start="0,0"
-              End="0,73.5">
+              End="0,49.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,73.5" />
+                    End="0,49.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-55.80638671875,30.9453125,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="121,42"
-          Id="Package\Productline stage -&gt; NDS\Union All"
-          TopLeft="654,590" />
-        <EdgeLayout
-          Id="Package\Productline stage -&gt; NDS.Paths[Lookup No Match Output1]"
-          TopLeft="731.666666666667,353">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,237"
-              Start="0,0"
-              End="0,229.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,229.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-55.80638671875,108.9453125,111.6127734375,11.609375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9179,25 +7708,87 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Productline stage -&gt; NDS.Paths[Union All Output 1]"
-          TopLeft="716.75,632">
+          Id="Package\Productline stage -&gt; NDS.Paths[Lookup No Match Output1]"
+          TopLeft="731.666666666667,353">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,67"
+              EndConnector="0,237"
               Start="0,0"
-              End="0,59.5">
+              End="0,229.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,59.5" />
+                    End="0,229.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-55.80638671875,108.9453125,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Productline stage -&gt; NDS.Paths[Lookup No Match Output]"
+          TopLeft="554,441">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,81"
+              Start="0,0"
+              End="0,73.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,73.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-55.80638671875,30.9453125,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Productline stage -&gt; NDS.Paths[Lookup Match Output]"
+          TopLeft="662,353">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-106,46"
+              Start="0,0"
+              End="-106,38.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.6067415730337" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.6067415730337"
+                    Point2="0,18.6067415730337"
+                    Point3="-4,18.6067415730337" />
+                  <mssgle:LineSegment
+                    End="-102,18.6067415730337" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-102,18.6067415730337"
+                    Point2="-106,18.6067415730337"
+                    Point3="-106,22.6067415730337" />
+                  <mssgle:LineSegment
+                    End="-106,38.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-101.19138671875,23.6067415730337,96.3827734375,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9266,409 +7857,205 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
     design-time-name="Package\Sale stage -&gt; NDS">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="195,42"
           Id="Package\Sale stage -&gt; NDS\Lookup productID in nds"
-          TopLeft="288.746031746031,329.202380952381" />
+          TopLeft="404.301587301587,330.313492063492" />
         <NodeLayout
           Size="175,42"
           Id="Package\Sale stage -&gt; NDS\insert into sales_nds"
-          TopLeft="352.951770451771,979.722222222222" />
+          TopLeft="427.194194694195,712.752525252525" />
         <NodeLayout
           Size="215,42"
           Id="Package\Sale stage -&gt; NDS\Lookup customer type in nds"
-          TopLeft="199.488095238095,552.543650793651" />
+          TopLeft="392.326479076479,428.755772005772" />
         <NodeLayout
           Size="209,42"
           Id="Package\Sale stage -&gt; NDS\Lookup paymenttype in nds"
-          TopLeft="334.242979242978,854.472222222222" />
+          TopLeft="403.232878232877,620.633838383838" />
         <NodeLayout
           Size="129,42"
           Id="Package\Sale stage -&gt; NDS\sale_stage"
-          TopLeft="512.15873015873,50" />
-        <NodeLayout
-          Size="121,42"
-          Id="Package\Sale stage -&gt; NDS\Union All"
-          TopLeft="518.587301587301,553.555555555556" />
+          TopLeft="442.15873015873,96.25" />
         <NodeLayout
           Size="185,42"
           Id="Package\Sale stage -&gt; NDS\Derived Column active"
-          TopLeft="480.15873015873,138" />
+          TopLeft="410.15873015873,169.25" />
         <NodeLayout
           Size="180,42"
           Id="Package\Sale stage -&gt; NDS\Lookup branch in nds"
-          TopLeft="481.821067821068,242.600649350649" />
+          TopLeft="419.321067821068,248.850649350649" />
         <NodeLayout
           Size="181,42"
           Id="Package\Sale stage -&gt; NDS\Lookup gender in nds"
-          TopLeft="277.400793650793,665.972222222222" />
+          TopLeft="411.542207792207,522.537878787879" />
         <EdgeLayout
-          Id="Package\Sale stage -&gt; NDS.Paths[OLE DB Source Output]"
-          TopLeft="574.65873015873,92">
+          Id="Package\Sale stage -&gt; NDS.Paths[Derived Column Output]"
+          TopLeft="505.989898989899,211.25">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,46"
+              EndConnector="0,37.600649350649"
               Start="0,0"
-              End="0,38.5">
+              End="0,30.100649350649">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sale stage -&gt; NDS.Paths[Lookup Match Output4]"
-          TopLeft="439.597374847374,896.472222222222">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,83.25"
-              Start="0,0"
-              End="0,75.75">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,75.75" />
+                    End="0,30.100649350649" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,32.0703125,96.3827734375,11.609375"
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sale stage -&gt; NDS.Paths[OLE DB Source Output]"
+          TopLeft="504.65873015873,138.25">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,31"
+              Start="0,0"
+              End="0,23.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sale stage -&gt; NDS.Paths[Lookup Match Output4]"
+          TopLeft="511.213536463536,662.633838383838">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50.1186868686868"
+              Start="0,0"
+              End="0,42.6186868686868">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.6186868686868" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,15.5046559343434,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sale stage -&gt; NDS.Paths[Lookup Match Output3]"
-          TopLeft="367.900793650793,707.972222222222">
+          TopLeft="504.887543012542,564.537878787879">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="37.3421855921853,146.5"
+              EndConnector="0,56.0959595959597"
               Start="0,0"
-              End="37.3421855921853,139">
+              End="0,48.5959595959597">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,83.2321937321937" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,83.2321937321937"
-                    Point2="0,87.2321937321937"
-                    Point3="4,87.2321937321937" />
-                  <mssgle:LineSegment
-                    End="33.3421855921853,87.2321937321937" />
-                  <mssgle:CubicBezierSegment
-                    Point1="33.3421855921853,87.2321937321937"
-                    Point2="37.3421855921853,87.2321937321937"
-                    Point3="37.3421855921853,91.2321937321937" />
-                  <mssgle:LineSegment
-                    End="37.3421855921853,139" />
+                    End="0,48.5959595959597" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-29.5202939226574,92.2321937321937,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,18.4932922979798,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sale stage -&gt; NDS.Paths[Lookup Match Output2]"
-          TopLeft="306.988095238095,594.543650793651">
+          TopLeft="500.934343434343,470.755772005772">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="32.0793650793643,71.4285714285708"
+              EndConnector="0,51.7821067821063"
               Start="0,0"
-              End="32.0793650793643,63.9285714285708">
+              End="0,44.2821067821063">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.481614770771" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,38.481614770771"
-                    Point2="0,42.481614770771"
-                    Point3="4,42.481614770771" />
-                  <mssgle:LineSegment
-                    End="28.0793650793643,42.481614770771" />
-                  <mssgle:CubicBezierSegment
-                    Point1="28.0793650793643,42.481614770771"
-                    Point2="32.0793650793643,42.481614770771"
-                    Point3="32.0793650793643,46.481614770771" />
-                  <mssgle:LineSegment
-                    End="32.0793650793643,63.9285714285708" />
+                    End="0,44.2821067821063" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-32.1517041790678,47.481614770771,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,16.3363658910531,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sale stage -&gt; NDS.Paths[Lookup Match Output1]"
-          TopLeft="355.079365079364,371.202380952381">
+          TopLeft="500.814033189033,372.313492063492">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-48.0912698412691,181.34126984127"
+              EndConnector="0,56.4422799422802"
               Start="0,0"
-              End="-48.0912698412691,173.84126984127">
+              End="0,48.9422799422802">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,69.421999386394" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,69.421999386394"
-                    Point2="0,73.421999386394"
-                    Point3="-4,73.421999386394" />
-                  <mssgle:LineSegment
-                    End="-44.0912698412691,73.421999386394" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-44.0912698412691,73.421999386394"
-                    Point2="-48.0912698412691,73.421999386394"
-                    Point3="-48.0912698412691,77.421999386394" />
-                  <mssgle:LineSegment
-                    End="-48.0912698412691,173.84126984127" />
+                    End="0,48.9422799422802" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-72.2370216393846,78.421999386394,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,18.6664524711401,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sale stage -&gt; NDS.Paths[Lookup Match Output]"
-          TopLeft="543.154401154401,284.600649350649">
+          TopLeft="505.561327561327,290.850649350649">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-156.90836940837,44.6017316017323"
+              EndConnector="0,39.4628427128431"
               Start="0,0"
-              End="-156.90836940837,37.1017316017323">
+              End="0,31.9628427128431">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,14.0764727196448" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,14.0764727196448"
-                    Point2="0,18.0764727196448"
-                    Point3="-4,18.0764727196448" />
-                  <mssgle:LineSegment
-                    End="-152.90836940837,18.0764727196448" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-152.90836940837,18.0764727196448"
-                    Point2="-156.90836940837,18.0764727196448"
-                    Point3="-156.90836940837,22.0764727196448" />
-                  <mssgle:LineSegment
-                    End="-156.90836940837,37.1017316017323" />
+                    End="0,31.9628427128431" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-126.645571422935,23.0764727196448,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,10.1767338564215,96.3827734375,11.609375"
               RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sale stage -&gt; NDS.Paths[Lookup Error Output4]"
-          TopLeft="472.242979242978,854.472222222222">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="125.677655677656,-258.916666666666"
-              Start="0,0"
-              End="125.677655677656,-251.416666666666">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-124.580277660025" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-124.580277660025"
-                    Point2="0,-128.580277660025"
-                    Point3="4,-128.580277660025" />
-                  <mssgle:LineSegment
-                    End="121.677655677656,-128.580277660025" />
-                  <mssgle:CubicBezierSegment
-                    Point1="121.677655677656,-128.580277660025"
-                    Point2="125.677655677656,-128.580277660025"
-                    Point3="125.677655677656,-132.580277660025" />
-                  <mssgle:LineSegment
-                    End="125.677655677656,-251.416666666666" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="16.9724411200782,-123.580277660025,91.7327734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sale stage -&gt; NDS.Paths[Lookup Error Output3]"
-          TopLeft="396.734126984126,665.972222222222">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="163.519841269842,-70.4166666666663"
-              Start="0,0"
-              End="163.519841269842,-62.9166666666663">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-31.0205972746795" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-31.0205972746795"
-                    Point2="0,-35.0205972746795"
-                    Point3="4,-35.0205972746795" />
-                  <mssgle:LineSegment
-                    End="159.519841269842,-35.0205972746795" />
-                  <mssgle:CubicBezierSegment
-                    Point1="159.519841269842,-35.0205972746795"
-                    Point2="163.519841269842,-35.0205972746795"
-                    Point3="163.519841269842,-39.0205972746795" />
-                  <mssgle:LineSegment
-                    End="163.519841269842,-62.9166666666663" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="35.8935339161708,-30.0205972746795,91.7327734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sale stage -&gt; NDS.Paths[Lookup Error Output2]"
-          TopLeft="414.488095238095,574.049603174603">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="104.099206349206,0"
-              Start="0,0"
-              End="96.5992063492059,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="96.5992063492059,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="2.43321645585296,5,91.7327734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sale stage -&gt; NDS.Paths[Lookup Error Output1]"
-          TopLeft="417.412698412698,371.202380952381">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="142.84126984127,182.353174603174"
-              Start="0,0"
-              End="142.84126984127,174.853174603174">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,86.6195998528467" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,86.6195998528467"
-                    Point2="0,90.6195998528467"
-                    Point3="4,90.6195998528467" />
-                  <mssgle:LineSegment
-                    End="138.84126984127,90.6195998528467" />
-                  <mssgle:CubicBezierSegment
-                    Point1="138.84126984127,90.6195998528467"
-                    Point2="142.84126984127,90.6195998528467"
-                    Point3="142.84126984127,94.6195998528467" />
-                  <mssgle:LineSegment
-                    End="142.84126984127,174.853174603174" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="25.554248201885,95.6195998528467,91.7327734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sale stage -&gt; NDS.Paths[Lookup Error Output]"
-          TopLeft="599.204184704185,284.600649350649">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,268.954906204907"
-              Start="0,0"
-              End="0,261.454906204907">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,261.454906204907" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-45.86638671875,124.922765602453,91.7327734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sale stage -&gt; NDS.Paths[Derived Column Output]"
-          TopLeft="572.239898989899,180">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,62.6006493506493"
-              Start="0,0"
-              End="0,55.1006493506493">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,55.1006493506493" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9776,29 +8163,6 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
         <Name>OverwriteParamsSQLProp</Name>
         <Value
           type="q4:string">false</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Product stage -&gt; NDS\Lookup productID value in nds 1">
-    <Properties>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q2:string">[dbo].[product_nds]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q3:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q4:boolean">false</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

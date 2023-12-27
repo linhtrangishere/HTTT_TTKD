@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="ExcelToSource"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{E95B1364-2B9B-4ABD-B67E-CD5D5ABDF848}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{05C764B3-679F-45B2-8ABC-D61109A581D3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -2147,6 +2147,30 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="152,42"
+          Id="Package\Data Flow Task\product_source"
+          TopLeft="845,336" />
+        <NodeLayout
+          Size="131,42"
+          Id="Package\Data Flow Task\productline"
+          TopLeft="598.285714285714,95.7142857142857" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Data Flow Task\supermarket sale"
+          TopLeft="1076,97" />
+        <NodeLayout
+          Size="132,42"
+          Id="Package\Data Flow Task\city_source"
+          TopLeft="320,329" />
+        <NodeLayout
+          Size="153,42"
+          Id="Package\Data Flow Task\convert product"
+          TopLeft="851,228" />
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Data Flow Task\sales_source"
+          TopLeft="1091,336" />
+        <NodeLayout
           Size="165,42"
           Id="Package\Data Flow Task\convert sales data"
           TopLeft="1079,233" />
@@ -2155,45 +2179,21 @@
           Id="Package\Data Flow Task\productline_source"
           TopLeft="585.428571428571,333.285714285714" />
         <NodeLayout
-          Size="153,42"
-          Id="Package\Data Flow Task\convert product"
-          TopLeft="851,228" />
-        <NodeLayout
-          Size="160,42"
-          Id="Package\Data Flow Task\supermarket sale"
-          TopLeft="1076,97" />
-        <NodeLayout
-          Size="131,42"
-          Id="Package\Data Flow Task\productline"
-          TopLeft="598.285714285714,95.7142857142857" />
-        <NodeLayout
-          Size="152,42"
-          Id="Package\Data Flow Task\product_source"
-          TopLeft="845,336" />
-        <NodeLayout
-          Size="139,42"
-          Id="Package\Data Flow Task\sales_source"
-          TopLeft="1091,336" />
-        <NodeLayout
-          Size="132,42"
-          Id="Package\Data Flow Task\city_source"
-          TopLeft="320,329" />
-        <NodeLayout
-          Size="170,42"
-          Id="Package\Data Flow Task\convert productline"
-          TopLeft="584.428571428571,228.285714285714" />
-        <NodeLayout
           Size="115,42"
           Id="Package\Data Flow Task\product"
           TopLeft="868,96" />
+        <NodeLayout
+          Size="134,42"
+          Id="Package\Data Flow Task\convert city"
+          TopLeft="324,232" />
         <NodeLayout
           Size="95,42"
           Id="Package\Data Flow Task\city"
           TopLeft="336.142857142857,96.5714285714286" />
         <NodeLayout
-          Size="134,42"
-          Id="Package\Data Flow Task\convert city"
-          TopLeft="324,232" />
+          Size="170,42"
+          Id="Package\Data Flow Task\convert productline"
+          TopLeft="584.428571428571,228.285714285714" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Excel Source Output3]"
           TopLeft="1158.75,139">
