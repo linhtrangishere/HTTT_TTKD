@@ -7,7 +7,7 @@
   DTS:CreatorName="lantrinh_asus\lantr"
   DTS:DTSID="{4CA5A9F5-4FEF-4F6E-8B16-B45E4690F67A}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5397.1"
+  DTS:LastModifiedProductVersion="16.0.5314.0"
   DTS:LocaleID="1033"
   DTS:ObjectName="ExcelToSource"
   DTS:PackageType="5"
@@ -25,7 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\lantr\Downloads\supermarket_sales.xls;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\code\SSIS\HTTT_TTKD\script_sql\supermarket_sales.xls;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager

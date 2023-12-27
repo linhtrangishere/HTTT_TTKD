@@ -7,7 +7,7 @@
   DTS:CreatorName="lantrinh_asus\lantr"
   DTS:DTSID="{AB6AC5E7-D98B-4333-9B1F-275B0F936E76}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5397.1"
+  DTS:LastModifiedProductVersion="16.0.5314.0"
   DTS:LocaleID="1033"
   DTS:ObjectName="SourceToStage"
   DTS:PackageType="5"
@@ -49,7 +49,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=LANTRINH_ASUS;Initial Catalog=metadata;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-SourceToStage-{1EB69965-0B0B-4FE8-A80F-3832222B00C3}LANTRINH_ASUS.metadata;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=metadata;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-SourceToStage-{1EB69965-0B0B-4FE8-A80F-3832222B00C3}LANTRINH_ASUS.metadata;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -61,7 +61,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=LANTRINH_ASUS;Initial Catalog=supermarketsale_source;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-SourceToStage-{316A0876-CEA7-4A48-B797-AC8DB352D20F}LANTRINH_ASUS.supermarketsale_source;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=supermarketsale_source;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-SourceToStage-{316A0876-CEA7-4A48-B797-AC8DB352D20F}LANTRINH_ASUS.supermarketsale_source;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -73,7 +73,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=LANTRINH_ASUS;Initial Catalog=supermarketsale_stage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{50BB315B-10DB-4B2E-98CC-ED63EAE8E8C5}LANTRINH_ASUS.supermarketsale_stage;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=supermarketsale_stage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{50BB315B-10DB-4B2E-98CC-ED63EAE8E8C5}LANTRINH_ASUS.supermarketsale_stage;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -1217,11 +1217,9 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT *
-FROM sales_source where CONVERT(DATETIME, CONVERT(CHAR(8), Date, 112) 
-  + ' ' + CONVERT(CHAR(8), Time, 108)) &gt; ? 
-AND CONVERT(DATETIME, CONVERT(CHAR(8), Date, 112) 
-  + ' ' + CONVERT(CHAR(8), Time, 108)) &lt;= ?</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT        InvoiceID, Branch, CustomerType, Gender, ProductID, Quantity, Tax5Percentage, Total, [Date], [Time], Payment, Cogs, GrossMarginPercentage, GrossIncome, Rating
+FROM            sales_source
+WHERE        (CONVERT(DATETIME, CONVERT(CHAR(8), [Date], 112) + ' ' + CONVERT(CHAR(8), [Time], 108)) &gt; ?) AND (CONVERT(DATETIME, CONVERT(CHAR(8), [Date], 112) + ' ' + CONVERT(CHAR(8), [Time], 108)) &lt;= ?)</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -2187,7 +2185,7 @@ AND CONVERT(DATETIME, CONVERT(CHAR(8), Date, 112)
           Id="Package\Get, set CET city_stage"
           TopLeft="46,29" />
         <NodeLayout
-          Size="212,53"
+          Size="208,42"
           Id="Package\Get, set CET product_stage"
           TopLeft="520,27" />
         <NodeLayout
@@ -2420,18 +2418,18 @@ AND CONVERT(DATETIME, CONVERT(CHAR(8), Date, 112)
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="625.75,80">
+          TopLeft="624.75,69">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,41"
+              EndConnector="0,52"
               Start="0,0"
-              End="0,33.5">
+              End="0,44.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.5" />
+                    End="0,44.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2601,7 +2599,7 @@ AND CONVERT(DATETIME, CONVERT(CHAR(8), Date, 112)
     design-time-name="Package\city source -&gt; stage">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="127,42"
           Id="Package\city source -&gt; stage\city_stage"
@@ -2629,7 +2627,9 @@ AND CONVERT(DATETIME, CONVERT(CHAR(8), Date, 112)
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -2665,7 +2665,11 @@ AND CONVERT(DATETIME, CONVERT(CHAR(8), Date, 112)
     design-time-name="Package\product source -&gt; stage">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="146,42"
+          Id="Package\product source -&gt; stage\product_stage"
+          TopLeft="250,267" />
         <NodeLayout
           Size="146,42"
           Id="Package\product source -&gt; stage\product_stage"
@@ -2693,7 +2697,9 @@ AND CONVERT(DATETIME, CONVERT(CHAR(8), Date, 112)
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -2729,7 +2735,11 @@ AND CONVERT(DATETIME, CONVERT(CHAR(8), Date, 112)
     design-time-name="Package\productline source -&gt; stage">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="163,42"
+          Id="Package\productline source -&gt; stage\productline_stage"
+          TopLeft="89,228" />
         <NodeLayout
           Size="163,42"
           Id="Package\productline source -&gt; stage\productline_stage"
@@ -2757,7 +2767,9 @@ AND CONVERT(DATETIME, CONVERT(CHAR(8), Date, 112)
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -2793,7 +2805,7 @@ AND CONVERT(DATETIME, CONVERT(CHAR(8), Date, 112)
     design-time-name="Package\sale source -&gt; stage">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="129,42"
           Id="Package\sale source -&gt; stage\sale_stage"
@@ -2821,7 +2833,9 @@ AND CONVERT(DATETIME, CONVERT(CHAR(8), Date, 112)
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

@@ -7,7 +7,7 @@
   DTS:CreatorName="lantrinh_asus\lantr"
   DTS:DTSID="{17F4A951-1D75-42D3-AC30-792FE2F947DA}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5397.1"
+  DTS:LastModifiedProductVersion="16.0.5314.0"
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
@@ -37,7 +37,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=LANTRINH_ASUS;Initial Catalog=supermarketsale_nds;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package1-{A7E74958-035D-4543-828F-EF46AA056B75}LANTRINH_ASUS.supermarketsale_nds;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=supermarketsale_nds;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package1-{A7E74958-035D-4543-828F-EF46AA056B75}LANTRINH_ASUS.supermarketsale_nds;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -49,7 +49,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=LANTRINH_ASUS;Initial Catalog=supermarketsale_stage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{B2723C86-D70D-40DE-8CAB-E61C0100CF96}LANTRINH_ASUS.supermarketsale_stage;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=supermarketsale_stage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package1-{B2723C86-D70D-40DE-8CAB-E61C0100CF96}LANTRINH_ASUS.supermarketsale_stage;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -61,7 +61,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=LANTRINH_ASUS;Initial Catalog=supermarketsale_stage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{C4DF2FA0-5748-4385-8ABB-CC8908D8883E}LANTRINH_ASUS.supermarketsale_stage 1;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=supermarketsale_stage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package1-{C4DF2FA0-5748-4385-8ABB-CC8908D8883E}LANTRINH_ASUS.supermarketsale_stage 1;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -6730,7 +6730,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6752,7 +6754,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6786,7 +6790,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6904,7 +6910,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7036,7 +7044,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7058,7 +7068,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7080,7 +7092,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7174,7 +7188,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7196,7 +7212,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7218,7 +7236,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7288,7 +7308,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7344,7 +7366,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7486,7 +7510,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7626,7 +7652,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7648,7 +7676,9 @@ where (createddate &lt;= ? and createddate &gt; ?) or (updateddate &lt;=  ? and 
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout

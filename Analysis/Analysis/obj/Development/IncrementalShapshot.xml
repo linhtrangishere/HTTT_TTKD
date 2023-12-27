@@ -1,0 +1,96 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Analysis</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>ZMjosh4FVjBcWAKbQDd4PMm9Tfs=12/17/2023 5:13:53 PM12/17/2023 5:13:53 PM</TimeStamp>
+        <ID>
+          <String>Supermarketsale Dds</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>U8dMgOO23VgNKMwTPGIrokQocdA=12/19/2023 9:23:18 PM12/17/2023 5:14:37 PM</TimeStamp>
+        <ID>
+          <String>Supermarketsale Dds</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>YAWXt3qOsn2u1ynk53VmB40Gr0c=12/19/2023 9:25:06 PM12/17/2023 5:15:39 PM</TimeStamp>
+        <ID>
+          <String>Dim City</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>VpxMo0yP9kOoptgVIFnRen0kiiw=12/19/2023 9:25:06 PM12/17/2023 5:15:54 PM</TimeStamp>
+        <ID>
+          <String>Dim Customer Type</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>OGnqrDH/qUVdJvc0YP8rS7XUuTE=12/19/2023 10:20:16 PM12/17/2023 5:16:09 PM</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>vPLhPCIV2mnV9kUgMvYYlVwgADs=12/19/2023 9:25:06 PM12/17/2023 5:16:26 PM</TimeStamp>
+        <ID>
+          <String>Dim Payment Type</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>fAWiY+Taf4h/Q76Up+R3YAGOLsg=12/19/2023 10:13:37 PM12/17/2023 5:16:44 PM</TimeStamp>
+        <ID>
+          <String>Dim Product</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ox2zvy4vQplOdaGYjyaNolNeC4k=12/19/2023 9:25:06 PM12/17/2023 5:17:15 PM</TimeStamp>
+        <ID>
+          <String>Dim Gender</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>VI7bC4g+0PUl7rZ6/QQ+QecP1Hc=12/19/2023 10:20:16 PM12/17/2023 5:19:29 PMPYDu4LJ6Tgc0+NrR53qAFgdEoKM=12/17/2023 5:19:29 PM12/17/2023 5:19:29 PM</TimeStamp>
+        <ID>
+          <String>Supermarketsale Dds</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>2MKEcJtwaE/shmFmu6AOek9zvl8=12/17/2023 5:13:26 PM12/17/2023 5:13:26 PM</TimeStamp>
+      <ID>
+        <String>Analysis</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2023-12-19T15:20:27.796667Z</LastDeployed>
+</DeploymentSnapshot>
