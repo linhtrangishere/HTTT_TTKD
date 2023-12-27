@@ -7,12 +7,12 @@
   DTS:CreatorName="lantrinh_asus\lantr"
   DTS:DTSID="{4CA5A9F5-4FEF-4F6E-8B16-B45E4690F67A}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5314.0"
+  DTS:LastModifiedProductVersion="16.0.5397.1"
   DTS:LocaleID="1033"
   DTS:ObjectName="ExcelToSource"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{05C764B3-679F-45B2-8ABC-D61109A581D3}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{02D0EBD0-C63B-4F5D-9463-F7411FA0F2AB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -2135,7 +2135,7 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="151,42"
+          Size="150.666666666667,42"
           Id="Package\Data Flow Task"
           TopLeft="334,102" />
       </GraphLayout>
